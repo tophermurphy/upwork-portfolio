@@ -1,0 +1,48 @@
+{{load this "lgb-cw" "glunzsite" }}
+
+
+{{#> base baseData=head }} 
+<h1>{{head.title}}</h1>
+    <main class="content content-page" style="width: 100%; max-width:960px; margin: 0 auto; text-align:center;">
+        {{> page-header data=head}}
+   
+    <article class="page-article {{head.id}}-article">
+
+        {{> page-section-std dataKey="section1" data=content.section1 id=head.id sectionClass="section-text-left"   }}
+
+        {{> page-section-std id=id sectionClass="section2 section-text-right" data=content.section2 }}
+
+        <section class="page-section section-custom section-text-mixed section3">
+            <div class="section-custom-imgs section3-imgs-0">
+    
+            </div>
+            <div class="section-custom-copy section3-copy-0">
+                <h3 class="section-copy-header">{{content.section3.header}}</h3>
+                <p class="section-copy-body">{{content.section3.body.[0]}}</p>
+            </div>
+            <div class="section-custom-imgs section3-imgs-1">
+
+            </div>
+            <div class="section-custom-copy section3-copy-1">
+                <p class="section-copy-body section-copy-body-0">{{content.section3.body.[1]}}</p>
+            </div>
+        </section>
+
+        {{> page-section-std id=id sectionClass="section4 section-text-right" data=content.section4 }}
+
+        <section class="page-section section-standard section5 section-text-left">
+            <div class="section-imgs">
+        
+            </div>
+            <div class="section-copy">
+                <h3 class="section-copy-header">{{content.section5.header}}</h3>
+                {{#each content.section5.body}}
+                <p class="section-copy-body section-copy-body-{{@key}}">{{this}}</p>
+                {{/ each}}
+            </div>
+        </section>
+
+    </article>
+
+    </main>
+{{/ base }}

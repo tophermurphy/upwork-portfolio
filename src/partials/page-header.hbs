@@ -1,0 +1,45 @@
+{{!-- <header class="page-header {{page-id}}-header">
+    <div class="header-images"></div>
+    <div class="page-title">
+        <h1>{{page-title}}</h1>
+        <h2>{{page-subtitle}}</h2>
+    </div>
+    <blockquote class="page-description">
+        {{page-description}}
+    </blockquote>
+    <div class="page-info">
+        <div class="page-roles">
+           <strong>Roles:</strong> {{#each page-roles}}{{@this}}, {{/ each}}
+        </div>
+        <div class="page-tools">
+            <strong>Tools:</strong> {{#each page-tools}}{{@this}}, {{/ each}}
+        </div>
+        <div class="page-platforms">
+            <strong>Platform:</strong> {{#each page-platforms}}{{@this}}, {{/ each}}
+        </div>
+    </div>
+
+</header> --}}
+
+<header class="page-header {{data.id}}-header">
+    <div class="header-images"></div>
+    <div class="page-title">
+        <h1>{{data.title}}</h1>
+        <h2>{{data.subtitle}}</h2>
+    </div>
+    <blockquote class="page-description">
+        {{data.description}}
+    </blockquote>
+    <div class="page-info">
+        <div class="page-roles">
+           <strong>Roles:</strong> {{#each data.roles}}{{@this}}, {{/ each}}
+        </div>
+        <div class="page-tools">
+            <strong>Tools:</strong> {{#each data.tools}}{{@this}}, {{/ each}}
+        </div>
+        <div class="page-platforms">
+            <strong>Platform:</strong> {{#each data.platforms}}{{@this}}, {{/ each}}
+        </div>
+    </div>
+
+</header>

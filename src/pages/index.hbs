@@ -1,11 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Webpack + Handlebars</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  {{> hello-world}}
-</body>
-</html>
+{{load this "lgb-cw" null}}
+{{#> base bodyClass="home"  }}
+<h1>{{glunzsite.head.title}}</h1>
+  <a href="{{glunzsite.head.slug}}.html"><h3 style="position: absolute; top: 20px; margin:0 auto; z-index: 100;">{{glunzsite.head.title}}</h3></a>
+{{/ base }}

@@ -41,7 +41,7 @@ module.exports = {
             loader: 'handlebars-loader', 
             options: {
                 helperDirs: DIR_HELPERS,
-                partialDirs: DIR_PARTIALS
+                partialDirs: DIR_PARTIALS,
             } 
         }
     ],
