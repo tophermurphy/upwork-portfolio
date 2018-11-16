@@ -1,10 +1,9 @@
 {{load this "lgb-cw"}}
-
+{{load this "h2o-cw"}}
 
 {{#> base baseData=head }} 
-<h1>{{glunzsite.title}}</h1>
     <main class="content content-page" style="width: 100%; max-width:960px; margin: 0 auto; text-align:center;">
-        {{> page-header data=glunzsite}}
+        {{> page-header data=glunzsite dataKey="headImages" id=glunzsite.id }}
    
     <article class="page-article {{glunzsite.id}}-article">
 
