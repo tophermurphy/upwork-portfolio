@@ -1,6 +1,5 @@
 module.exports = {
     glunzsite: {
-            head: {
             title:    "Louis Glunz Beer Inc.",
             id:       "lgb-cw",
             slug:     "louis-glunz-beer-corporate-website",
@@ -26,7 +25,6 @@ module.exports = {
             platforms: [
                 "Wordpress"
             ],
-    },
         content: {
             section1: {
                 header:   "Making A Useful Tool Creates It's Own Opportunities",
