@@ -1,8 +1,8 @@
 <header class="page-header {{data.id}}-header">
     <div class="header-images">
                     {{#each data.headImages}}
-                <picture class="img-wrapper image-{{../id}}-{{../dataKey}}-{{@key}}">
-                    <img src="{{image filename}}" alt="{{alt}}" title="{{imagetitle filename}}"/>
+                <picture class="image-wrapper image-{{../id}}-{{../dataKey}}-{{@key}}">
+                    <img src="{{image filename}}" title="{{imagetitle filename}}"" alt="{{alt}}"/>
                 </picture>
             {{/each}}
     </div>
@@ -13,16 +13,13 @@
     <blockquote class="page-description">
         {{data.description}}
     </blockquote>
-    <div class="page-info">
-        <div class="page-roles">
+        <div class="page-info page-roles">
            <strong>Roles:</strong> {{#each data.roles}}{{@this}}, {{/ each}}
         </div>
-        <div class="page-tools">
+        <div class="page-info page-tools">
             <strong>Tools:</strong> {{#each data.tools}}{{@this}}, {{/ each}}
         </div>
-        <div class="page-platforms">
+        <div class="page-info page-platforms">
             <strong>Platform:</strong> {{#each data.platforms}}{{@this}}, {{/ each}}
         </div>
-    </div>
-
 </header>

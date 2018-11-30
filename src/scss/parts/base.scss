@@ -1,0 +1,74 @@
+html{
+    font-size: 100%;
+}
+
+body {
+    font-size: .625rem;
+    color: $base-dark;
+    font-family: $body-text-font;
+}
+
+
+h1, h2, h3, h4, h5, p {
+    margin-bottom: $margin-bottom-std;
+}
+
+h1 {
+    @extend %page-header;
+    font-size:  6em;
+    text-transform: uppercase;
+    letter-spacing: .0125em;
+}
+
+h2 {
+    @extend %page-subheader;
+    font-size: 2.4em;
+    color: $base-accent;
+}
+
+h3 {
+    @extend %body-header;
+    font-size: 4.2em;
+    line-height: .9;
+    letter-spacing: .0125em;
+}
+
+h4, h5, h6 {
+    @extend %light-condensed;
+}
+
+p {
+    @extend %body-text;
+    font-size: 1.7em;
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+header, section {
+    margin-bottom: $margin-bottom-std * 4;
+    @media (min-width: $md-width){
+        margin-bottom: $margin-bottom-std * 8;
+    }
+}
+
+.section-images, .section-custom-images {
+    margin-bottom: $margin-bottom-std;
+}
+
+.image-lgb-cw-section1-0 {
+    width: 58%;
+    height: auto;
+}

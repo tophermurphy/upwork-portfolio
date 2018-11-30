@@ -1,0 +1,86 @@
+// FONTS
+$page-header-font: rama-gothic-c, Impact, sans-serif; 
+%page-header {
+    font-family: $page-header-font;
+    font-weight: 900;
+}
+
+$page-subheader-font: minion-3-subhead, Times New Roman, Times, serif; 
+%page-subheader {
+    font-family: $page-subheader-font;
+    font-weight: 400;
+}
+
+$body-header-font: rama-gothic-m, Impact, sans-serif; 
+%body-header {
+    font-family: $body-header-font;
+    font-weight: 700;
+}
+
+$body-text-font: minion-3, Times New Roman, Times, serif;
+%body-text {
+    font-family: $body-text-font;
+    font-weight: 400;
+}
+
+$light-condensed-font: rama-gothic-e, Impact, sans-serif; 
+%light-condensed {
+    font-family: $light-condensed-font;
+    font-weight: 300;
+}
+
+// COLORS
+$base-dark: #392E25;
+$base-accent: #DF4D25;
+$background-grey: #F6F5F5;
+$positive-green: #417505;
+
+$margin-bottom-std: 1rem;
+
+$shadows-std: -2px 2px 4px rgba(0, 0, 0, .3);
+
+// Media-Query Breaks
+
+$md-width: 740px;
+$lg-width: 998px;
+$xl-width: 1400px;
+
+.lg-break {
+    display: none;
+    @media (min-width: $lg-width){
+        display: block;
+    }
+}
+
+@mixin max-auto($prop) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: $prop;
+}
+
+@mixin makeColumnsByMargin( $marginWidth, $columnsQty, $columnFr, $gutterFr ) {
+    $cols: [col];
+    $gutters: [gutter];
+    $grid-template-cols: "";
+    @for $i from 1 through $columnsQty - 1{
+        $grid-template-cols: $grid-template-cols + $cols + " " + $columnFr + "fr " + $gutters + " " + $gutterFr +  "fr ";
+    }
+    grid-template-columns: [lMrg] $marginWidth #{$grid-template-cols} $cols#{columnFr}fr [rMrg]  $marginWidth;
+}
+
+@mixin makeColumnsByWidth( $totalWidth, $columnsQty, $gutterWidth, $units) {
+    $cols: [col];
+    $gutters: [gutter];
+    // $content: "";
+    $remainingWidth: ($totalWidth - ($columnsQty - 1) * $gutterWidth);
+    $grid-template-cols: "";
+    @if $remainingWidth < $columnsQty {
+        @error "Gutter width is too large for total width!"
+    }
+    $columnWidth: $remainingWidth / $columnsQty;
+    @for $i from 1 through $columnsQty - 1{
+        $grid-template-cols: $grid-template-cols + $cols + " " + $columnWidth + $units + " " + $gutters + " " + $gutterWidth + $units + " ";
+    }
+    grid-template-columns: [lMrg] 1fr #{$grid-template-cols} $cols #{$columnWidth}#{$units}  [rMrg] 1fr;
+}

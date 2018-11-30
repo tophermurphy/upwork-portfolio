@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/vchabal/handlebars-webpack-boilerplate.git"
   },
-  "keywords": [ 
+  "keywords": [
     "webpack",
     "handlebars",
     "boilerplate"
@@ -32,6 +32,7 @@
     "fs-extra": "^5.0.0",
     "handlebars": "^4.0.11",
     "handlebars-loader": "^1.6.0",
+    "html-webpack-inline-svg-plugin": "^1.2.4",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.10.0",
     "sass-loader": "^6.0.6",

@@ -1,15 +1,15 @@
     <section class="page-section section-standard {{sectionClass}} {{dataKey}}">
-        <div class="section-imgs section-imgs-{{dataKey}}">
+        <div class="section-images section-images-{{dataKey}}">
             {{#each data.images}}
-                <picture class="img-wrapper image-{{../id}}-{{../dataKey}}-{{@key}}">
-                    <img src="{{image filename}}" alt="{{alt}}"/>
+                <picture class="image-wrapper image-{{../id}}-{{../dataKey}}-{{@key}}">
+                    <img src="{{image filename}}" title="{{imagetitle filename}}" alt="{{alt}}"/>
                 </picture>
             {{/each}}
         </div>
         <div class="section-copy">
-            <h3 class="section-copy-header">{{data.header}}</h3>
+            <h3 class="section-copy-header">{{{data.header}}}</h3>
             {{#each data.body}}
-                <p class="section-copy-body section-copy-body-{{@key}}">{{this}}</p>
+                <p class="section-copy-body section-copy-body-{{@key}}">{{{this}}}</p>
             {{/each}}
         </div>
     </section>
