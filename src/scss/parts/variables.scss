@@ -52,6 +52,15 @@ $xl-width: 1400px;
     }
 }
 
+.md-break {
+    display: none;
+    @media (min-width: $md-width){
+        display: block;
+    }
+}
+
+
+
 @mixin max-auto($prop) {
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +75,7 @@ $xl-width: 1400px;
     @for $i from 1 through $columnsQty - 1{
         $grid-template-cols: $grid-template-cols + $cols + " " + $columnFr + "fr " + $gutters + " " + $gutterFr +  "fr ";
     }
-    grid-template-columns: [lMrg] $marginWidth #{$grid-template-cols} $cols#{columnFr}fr [rMrg]  $marginWidth;
+    grid-template-columns: [lMrg] $marginWidth #{$grid-template-cols} $cols #{$columnFr}fr [rMrg]  $marginWidth [last];
 }
 
 @mixin makeColumnsByWidth( $totalWidth, $columnsQty, $gutterWidth, $units) {
@@ -84,3 +93,104 @@ $xl-width: 1400px;
     }
     grid-template-columns: [lMrg] 1fr #{$grid-template-cols} $cols #{$columnWidth}#{$units}  [rMrg] 1fr;
 }
+
+@media (min-width: $md-width) {
+
+    %page-grid-header-md {
+        display: grid;
+        grid-template-columns: [lMrg] .5fr [lCol] 5fr [gutter] 1fr [rCol1] 2fr [rCol2] 2fr [rCol3] 2fr [rMrg] .5fr [last];
+        grid-template-rows: auto auto auto;
+    }
+    %page-grid-md {
+        display: grid;
+        @include makeColumnsByMargin(.5fr, 12, 1, .25);
+        grid-template-rows: 1fr minmax(0px, 4rem) auto minmax(0px, 4rem) 1fr;
+    }
+}
+
+@media(min-width: $lg-width) {
+
+    %page-grid-header-lg {
+        display: grid;
+        grid-template-columns: [lMrg] .5fr [lCol] 38.5em [gutter] 9.5em [rCol1] 16em [rCol2] 16em [rCol3] 14.5em [rMrg] .5fr [last];
+        grid-template-rows: auto auto auto;
+    }
+
+    %page-grid-lg {
+        display: grid;
+        @include makeColumnsByWidth(94.5, 12, 1.5, 'em');
+        grid-template-rows: 1fr minmax(0px, 4rem) auto minmax(0px, 4rem) 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+// @media (min-width: $md-width) {
+
+//     %page-grid-header-md {
+//         display: grid;
+//         grid-template-columns: [lMrg] .5fr [lCol] 5fr [gutter] 1fr [rCol1] 2fr [rCol2] 2fr [rCol3] 2fr [rMrg] .5fr [last];
+//         grid-template-rows: auto auto auto;
+//     }
+
+//     %page-grid-left-text-md {
+//         display: grid;
+//         grid-template-columns: [lMrg] .5fr [lCol] 4fr [gutter] 1fr [rCol] 7fr [rMrg] .5fr [last];
+//         grid-template-rows: 1fr minmax(0px, 4rem) auto minmax(0px, 4rem) 1fr;
+//         grid-template-areas: " . . . rightCol rightCol "
+//                              " . . . rightCol rightCol "
+//                              " . leftCol . rightCol rightCol "
+//                              " . . . rightCol rightCol "
+//                              " . . . rightCol rightCol ";
+//     }
+
+//     %page-grid-right-text-md {
+//         display: grid;
+//          @include makeColumnsByMargin(.5fr, 12, 1, .25);
+//         grid-template-columns: [lMrg] .5fr [lCol] 7fr [gutter] 2rem [rCol] 4fr [rMrg] .5fr [last];
+//         grid-template-rows: 1fr minmax(0px, 4rem) auto minmax(0px, 4rem) 1fr;
+//         grid-template-areas: " leftCol leftCol . . . "
+//                              " leftCol leftCol . . . "
+//                              " leftCol leftCol . rightCol . "
+//                              " leftCol leftCol . . . "
+//                              " leftCol leftCol . . . ";
+//     }
+
+
+// }
+
+// @media(min-width: $lg-width) {
+
+//     %page-grid-header-lg {
+//         display: grid;
+//         grid-template-columns: [lMrg] .5fr [lCol] 38.5em [gutter] 9.5em [rCol1] 16em [rCol2] 16em [rCol3] 14.5em [rMrg] .5fr [last];
+//         grid-template-rows: auto auto auto;
+//     }
+
+//     %page-grid-left-text-lg {
+//         display: grid;
+//         grid-template-columns: [lMrg] .5fr [lCol] 30.5em [gutter] 9.5em [rCol] 54.5em [rMrg] .5fr [last];
+//         grid-template-rows: 1fr minmax(0px, 4rem) auto minmax(0px, 4rem) 1fr;
+//         grid-template-areas:    " . . . rightCol . "
+//                                 " . . . rightCol . "
+//                                 " . leftCol . rightCol . "
+//                                 " . . . rightCol . "
+//                                 " . . . rightCol . ";
+//     }
+
+//     %page-grid-right-text-lg {
+//         grid-template-columns: [lMrg] .5fr [lCol] 54.5em  [gutter] 9.5em [rCol] 30.5em [rMrg] .5fr [last];
+//         grid-template-rows: 1fr minmax(0px, 4rem) auto minmax(0px, 4rem) 1fr;
+//         grid-template-areas: " . leftCol . . . "
+//                             " . leftCol . . . "
+//                             " . leftCol . rightCol . "
+//                             " . leftCol . . . "
+//                             " . leftCol . . . ";
+//     }
+
+// }

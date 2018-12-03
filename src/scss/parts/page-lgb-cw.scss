@@ -1,0 +1,531 @@
+//// Begin Page Specific CSS Nest /////
+.content-page-lgb-cw {
+
+.section-custom {
+    @extend %page-grid-md;
+    @extend %page-grid-lg;
+
+}
+
+.section-custom.section3 {
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.section-custom.section6 {
+    grid-template-rows: auto auto auto;
+}
+
+
+
+// BEGIN IMAGE POSITIONING //
+
+.image-section1-0 {
+    width: 58%;
+}
+
+.image-section1-1 {
+    width: 31.5%;
+    margin-left: 63%;
+    margin-top: -75%;
+    z-index: 10;
+}
+
+.image-section1-2 {
+    width: 70%;
+    margin-left: 32%;
+    margin-top: -7%;
+}
+
+.image-section2-0 {
+    width: 50%;
+}
+
+.image-section2-1 {
+    display: none;
+}
+
+.image-section2-2 {
+    width: 54.3%;
+    margin-top: -6%;
+}
+
+.image-section2-3 {
+    width: 21.4%;
+    margin-left: 49.3%;
+    margin-top: -34%;
+    z-index: 20;
+}
+
+.image-section2-4 {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -129%;
+}
+
+.image-section2-5 {
+    width: 28%;
+    margin-left: 72%;
+    margin-top: 29.5%;
+}
+
+.image-section2-6 {
+    width: 30%;
+    margin-left: 70%;
+    margin-top: -64%;
+}
+
+.image-section2-7 {
+    width: 16.6%;
+    margin-left: 32.8%;
+    margin-top: -46%;
+}
+
+.image-section2-8 {
+    width: 49%;
+    margin-top: -36%;
+    z-index: 0;
+}
+
+.image-section2-9 {
+    display: none;
+}
+
+.image-section3-0 {
+    width: 55.5%;
+    margin-left: 44.5%;
+    z-index: -10;
+}
+
+.image-section3-1 {
+    width: 58.5%;
+    margin-top: -70%;
+}
+
+.image-section3-2 {
+    width: 63.5%;
+    margin-left: 23%;
+    margin-top: -46%;
+}
+
+.section-images-section3-1 {
+    max-width: 100%;
+    background-color: #fff;
+}
+
+.image-section3-3 {
+    @include max-auto(550px);
+}
+
+.image-section4-0 {
+    width: 85.6%;
+}
+
+.image-section4-1 {
+    width: 82%;
+    margin-left: 17.5%;
+    margin-top: -65%;
+}
+
+$glunz-box: solid #9D9C9D;
+
+.section-images-section5 {
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    margin-left: 2px;
+    margin-right: 1px;
+    border-top: $glunz-box 1px; 
+    border-left: $glunz-box 3px; 
+    border-bottom: $glunz-box 3px; 
+    border-right: $glunz-box 1px; 
+    picture {
+    box-shadow: none;
+    }
+    @media (min-width: 400px){
+        @include max-auto(400px);
+    }
+}
+
+.image-section5-0 {
+    width: 62%;
+    padding: 2% 6% 1% 9%;
+    margin: 6% 0 6.5%;
+    background-image: linear-gradient(to right, #e7aa04, #a3651f);
+    display: inline-block;
+
+
+}
+
+.image-section5-1 {
+    width: 77%;
+    margin-left: 9%;
+    margin-bottom: $margin-bottom-std;
+}
+
+////// END IMAGE POSITIONING /////
+
+.glunz-swatch-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 8% $margin-bottom-std 8%;
+    
+}
+
+.glunz-swatch {
+    @extend %light-condensed;
+    font-size: 1em;
+    text-align: center;
+    border-top: $glunz-box 1px; 
+    border-left: $glunz-box 2px; 
+    border-bottom: $glunz-box 2px; 
+    border-right: $glunz-box 1px; 
+    margin-bottom: $margin-bottom-std / 2;
+}
+
+.glunz-swatch-text {
+    font-size: 1.6em;
+    margin-bottom: .2em;
+}
+
+.glunz-swatch-sm {
+    width: 6.8em;
+}
+
+.glunz-swatch-lg {
+    width: 10.8em;
+}
+
+.glunz-swatch-color {
+    width: 100%;
+    margin: .4em;
+    width: auto;
+    height: 5.5em;
+}
+
+.glunz-swatch-color-0 {
+    background-color: #e7aa04;
+}
+
+.glunz-swatch-color-1 {
+    background-color: #8F2100;
+}
+
+.glunz-swatch-color-2 {
+    background-image: linear-gradient(to right, #e7aa04, #a3651f);
+}
+
+.glunz-swatch-color-3 {
+    background-color: #2a2e14;
+}
+
+.glunz-swatch-color-4{
+    background-color: #645d54;
+}
+
+.glunz-swatch-color-5 {
+    background-image: linear-gradient(to right, #9e3400, #382929);
+
+}
+
+.section-glunzsite-stats {
+    background-color: #fff;
+    padding-top: $margin-bottom-std * 2;
+}
+
+.glunzsite-stats {
+    font-size: 1em;
+    text-align: center;
+    h4 {
+        font-size: 4.9em;
+        margin-bottom: 0;
+    }
+    p {
+        @extend %body-header;
+        font-size: 6.5em;
+        line-height: 1;
+        color: $positive-green;
+    }
+}
+
+#up-arrow-svg-path {
+    fill: $positive-green;
+}
+
+#up-arrow-svg {
+    width: .5em;
+    height: auto;
+}
+
+
+.up-arrow-svg {
+    display: inline-block; 
+    vertical-align: top;
+    margin-top: -.08em;
+}
+
+////// BEGIN MEDIA QUERIES//////
+
+@media (min-width: $md-width){
+
+    .section-custom.section3 {
+            &::before {
+                content: '';
+                display: block;
+                grid-column: 1 / last;
+                grid-row: 2 / 21;
+                background: #fff;
+                z-index: -100;
+            }
+            
+            .section-copy {
+                grid-column: col 1 / gutter 4;
+                grid-row: 3 / 4;
+            }
+            .section-images {
+                grid-column: col 6 / last;
+                grid-row: 1 / 6;
+                max-width: 100%;
+            }
+    
+            .section-images-section3-0 {
+                grid-row: 1 / 13;
+                margin-bottom: $margin-bottom-std * 2;
+            }
+    
+            .section-images-section3-1 {
+                grid-row: 13 / 21;
+                background: none;
+                
+            }
+    
+            .section3-copy-0 {
+                grid-row: 2 / 21;
+                margin-top: 4rem;
+    
+            }
+    
+            .section3-copy-1 {
+               display: none;
+            }
+    
+            .image-section3-0 {
+                width: 50%;
+                margin-left: 50%;
+            }
+    
+            .image-section3-1{
+                width: 53%;
+                margin-top: -80%;
+            }
+    
+            .image-section3-2{
+                width: 57%;
+                margin-left: 21.5%;
+                margin-top: -55%;
+            }
+    
+            .image-section3-3 {
+                max-width: 100%;
+            }
+    }
+
+
+    .section4 {
+        margin-top: $margin-bottom-std * 12;
+    }
+
+    .image-section4-0 {
+        width: 71%;
+        margin-top: -($margin-bottom-std * 4);
+    }
+    
+    .image-section4-1 {
+        width: 70%;
+        margin-left: 30%;
+        margin-top: -55%;
+    }
+
+    .section-images.section-images-section5 {
+        margin-right: 1%;
+        grid-column: col 6 / last;
+        grid-row: 3 / 4;
+        max-width: 100%;
+    }
+
+    .image-section5-1 {
+        width: 45%;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .glunz-swatch-wrap {
+        width: 30%;
+        margin-left: 10%;
+        margin-right: 0;
+        float: left;
+    }
+
+    .glunz-swatch-2, .glunz-swatch-5 {
+        flex-grow: 1;
+    }
+    
+    .section-custom.section-custom.section6 {
+        padding-bottom: $margin-bottom-std * 2;
+        .glunzsite-stats {
+            grid-row: 2 / 3;
+        }
+        .glunzsite-users {
+            grid-column: col 1 / gutter 3;
+        }
+        .glunzsite-sessions {
+            grid-column: col 4 / gutter 6;
+        }
+        .section-copy {
+            grid-row: 1 / 4;
+            grid-column: col 8 / rMrg;
+        }
+    }
+}
+
+@media (min-width: 842px){
+    .section-images-section3-0 {
+        grid-row: 1 / 14;
+    }
+
+    .section-images-section3-1 {
+        grid-row: 14 / 21;
+        
+    }
+}
+
+
+@media (min-width: $lg-width){
+
+    .image-section1-0 {
+        width: 62%;
+    }
+    
+    .image-section1-1 {
+        width: 35%;
+        margin-left: 60%;
+        margin-top: -69%;
+        z-index: 10;
+    }
+    
+    .image-section1-2 {
+        width: 80%;
+        margin-left: 19%;
+        margin-top: 4%;
+    }
+
+    .image-section2-0 {
+        width: 42%
+    }
+
+    .image-section2-1 {
+        display: block;
+        width: 58%;
+        margin-left: 42%;
+        margin-top: -53.5%;
+    }
+
+    .image-section2-2 {
+        width: 56%;
+        margin-top: -5%;
+    }
+
+    .image-section2-3 {
+        width: 22%;
+        margin-top: -48%;
+        margin-left: 49%;
+    }
+
+    .image-section2-4 {
+        width: 30%;
+        margin-left: 70%;
+        margin-top: -64%;
+    }
+
+    .image-section2-5 {
+        width: 30%;
+        margin-left: 70%;
+        margin-top: -12%;
+    }
+
+    .image-section2-6 {
+        width: 32%;
+        margin-left: 0;
+        margin-top: -23%;
+    }
+
+    .image-section2-7 {
+        width: 17.5%;
+        margin-left: 31.5%;
+        margin-top: -44.5%;
+    }
+
+    .image-section2-8 {
+        width: 51%;
+        margin-left: 49%;
+        margin-top: -43.5%;
+    }
+
+    .image-section2-9 {
+        display: block;
+        width: 32%;
+        margin-left: 0;
+        margin-top: -27%;
+    }
+
+    .section-custom.section3 {
+        .section-images {
+            grid-column: col 6 / rMrg;
+        }
+
+        .section-images-section3-0 {
+            grid-row: 1 / 15;
+        }
+
+        .section-images-section3-1 {
+            grid-row: 15 / 21;
+            margin-bottom: $margin-bottom-std;
+        }
+
+    }
+
+
+    .section-images.section-images-section5 {
+        grid-column: col 6 / rMrg;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////End Page Specific CSS Nest///////
+}

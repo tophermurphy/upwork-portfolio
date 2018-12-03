@@ -1,7 +1,7 @@
     <section class="page-section section-standard {{sectionClass}} {{dataKey}}">
         <div class="section-images section-images-{{dataKey}}">
             {{#each data.images}}
-                <picture class="image-wrapper image-{{../id}}-{{../dataKey}}-{{@key}}">
+                <picture class="image-wrapper image-{{../id}} image-{{../dataKey}}-{{@key}} ">
                     <img src="{{image filename}}" title="{{imagetitle filename}}" alt="{{alt}}"/>
                 </picture>
             {{/each}}

@@ -2,7 +2,7 @@
 {{load this "h2o-cw"}}
 
 {{#> base baseData=glunzsite }} 
-    <main class="content content-page">
+    <main class="content content-page content-page-{{glunzsite.id}}">
         {{> page-header data=glunzsite dataKey="headImages" id=glunzsite.id }}
    
     <article class="page-article {{glunzsite.id}}-article">
@@ -13,22 +13,23 @@
 
         <section class="page-section section-custom section-text-mixed section3">
             <div class="section-images section-custom-images section-images-section3-0">
-                <picture class="image-wrapper image-{{glunzsite.id}}-section3-0">
+                <picture class="image-wrapper image-{{glunzsite.id}} image-section3-0">
                     <img src="{{image glunzsite.content.section3.images.[0].filename }}" title="{{imagetitle glunzsite.content.section3.images.[0].filename}}" alt="{{glunzsite.content.section3.images.[0].alt}}"/>
                 </picture>
-                <picture class="image-wrapper image-{{glunzsite.id}}-section3-1">
+                <picture class="image-wrapper image-{{glunzsite.id}} image-section3-1">
                     <img src="{{image glunzsite.content.section3.images.[1].filename }}" title="{{imagetitle glunzsite.content.section3.images.[1].filename}}" alt="{{glunzsite.content.section3.images.[1].alt}}"/>
                 </picture>
-                <picture class="image-wrapper image-{{glunzsite.id}}-section3-2">
+                <picture class="image-wrapper image-{{glunzsite.id}} image-section3-2">
                     <img src="{{image glunzsite.content.section3.images.[2].filename }}" title="{{imagetitle glunzsite.content.section3.images.[2].filename}}" alt="{{glunzsite.content.section3.images.[2].alt}}"/>
                 </picture>
             </div>
             <div class="section-copy section-custom-copy section3-copy-0">
                 <h3 class="section-copy-header">{{glunzsite.content.section3.header}}</h3>
                 <p class="section-copy-body">{{glunzsite.content.section3.body.[0]}}</p>
+                <p class="section-copy-body md-break">{{glunzsite.content.section3.body.[1]}}</p>
             </div>
             <div class="section-images section-custom-images section-images-section3-1">
-                <picture class="image-wrapper image-{{glunzsite.id}}-section3-3">
+                <picture class="image-wrapper image-{{glunzsite.id}} image-section3-3">
                     <img src="{{image glunzsite.content.section3.images.[3].filename }}" title="{{imagetitle glunzsite.content.section3.images.[3].filename}}" alt="{{glunzsite.content.section3.images.[3].alt}}"/>
                 </picture>
             </div>
@@ -41,10 +42,10 @@
 
         <section class="page-section section-standard section5 section-text-left">
             <div class="section-images section-custom-images section-images-section5">
-                <picture class="image-wrapper image-{{glunzsite.id}}-section5-0">
+                <picture class="image-wrapper image-{{glunzsite.id}} image-section5-0">
                     <img src="{{image glunzsite.content.section5.images.[0].filename }}" title="{{imagetitle glunzsite.content.section5.images.[0].filename}}" alt="{{glunzsite.content.section5.images.[0].alt}}"/>
                 </picture>
-                <picture class="image-wrapper image-{{glunzsite.id}}-section5-1">
+                <picture class="image-wrapper image-{{glunzsite.id}} image-section5-1">
                     <img src="{{image glunzsite.content.section5.images.[1].filename }}" title="{{imagetitle glunzsite.content.section5.images.[1].filename}}" alt="{{glunzsite.content.section5.images.[1].alt}}"/>
                 </picture>
                 <div class="glunz-swatch-wrap">
@@ -82,7 +83,7 @@
             </div>
         </section>
 
-        <section class="page-section section-glunzsite-stats section6">
+        <section class="page-section section-custom section-glunzsite-stats section6">
             <div class="glunzsite-users glunzsite-stats">
                 <h4>{{glunzsite.content.section6.extra.[0]}}</h4>
                 <p><span class="up-arrow-svg" > {{{glunzsite.content.section6.svgs}}} </span> 
