@@ -66,6 +66,11 @@ header, section {
 
 .section-images, .section-custom-images {
     margin-bottom: $margin-bottom-std;
+    &picture:hover {
+        z-index: 1000;
+        transform: scale(110%);
+        transition: .3s;
+    }
 }
 
 .image-lgb-cw-section1-0 {

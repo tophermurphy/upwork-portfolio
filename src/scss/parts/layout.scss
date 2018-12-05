@@ -1,4 +1,5 @@
-body.page {
+body.page,
+body.home {
     background-color: $background-grey;
 }
 
@@ -22,7 +23,7 @@ body.page {
 }
 
 .section-copy, .page-header {
-    background-color: #fff;
+    background-color: $base-white;
 }
 
 .page-header {
@@ -214,32 +215,33 @@ h1, h2, h3, h4, p, .page-description, .page-info {
     .section-standard.section-text-left  {
         
         .section-copy {
-            grid-column: col 1 / gutter 4;
+            grid-column: $grid-text-left;
             grid-row: 3 / 4;
         }
         .section-images {
-            grid-column: col 6 / last;
+            grid-column: $grid-images-right-edge;
             grid-row: 1 / 6;
             max-width: 100%;
         }
         &:before {
             content: "";
             display: block;
+            background-color: $base-white;
+            z-index: -100;
             grid-column: lMrg / last;
             grid-row: 2 / span 3;
-            background-color: #fff;
         }
     }
 
     .section-standard.section-text-right {
 
         .section-copy {
-            grid-column: col 9 / rMrg;
+            grid-column: $grid-text-right;
             grid-row: 3 / 4;
            
         }
         .section-images {
-            grid-column: lMrg / gutter 7;
+            grid-column: $grid-images-left-edge;
             grid-row: 1 / 6;
             max-width: 100%;
 
@@ -247,11 +249,17 @@ h1, h2, h3, h4, p, .page-description, .page-info {
         &:before {
             content: "";
             display: block;
+            background-color: $base-white;
+            z-index: -100;
             grid-column: lMrg / last;
             grid-row: 2 / span 3;
-            background-color: #fff;
-            z-index: -1000;
         }
+     }
+
+     .section-images,
+     .section-custom-images {
+         margin: 0;
+         padding: 0;
      }
     
 }
@@ -283,13 +291,13 @@ h1, h2, h3, h4, p, .page-description, .page-info {
 
     .section-standard.section-text-left {
         .section-images {
-            grid-column: col 6 / rMrg;
+            grid-column: $grid-images-right;
         }
     }
 
     .section-standard.section-text-right {
         .section-images {
-            grid-column: col 1 / gutter 7;
+            grid-column: $grid-images-left;
         }
     }
 }

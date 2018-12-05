@@ -1,5 +1,5 @@
 //// Begin Page Specific CSS Nest /////
-.content-page-lgb-cw {
+.page-lgb-cw {
 
 .section-custom {
     @extend %page-grid-md;
@@ -109,7 +109,7 @@
 
 .section-images-section3-1 {
     max-width: 100%;
-    background-color: #fff;
+    background-color: $base-white;
 }
 
 .image-section3-3 {
@@ -131,7 +131,7 @@ $glunz-box: solid #9D9C9D;
 .section-images-section5 {
     position: relative;
     z-index: 10;
-    background-color: #fff;
+    background-color: $base-white;
     margin-left: 2px;
     margin-right: 1px;
     border-top: $glunz-box 1px; 
@@ -229,7 +229,7 @@ $glunz-box: solid #9D9C9D;
 }
 
 .section-glunzsite-stats {
-    background-color: #fff;
+    background-color: $base-white;
     padding-top: $margin-bottom-std * 2;
 }
 
@@ -270,20 +270,20 @@ $glunz-box: solid #9D9C9D;
 
     .section-custom.section3 {
             &::before {
-                content: '';
+                content: "";
                 display: block;
+                background-color: $base-white;
+                z-index: -100;               
                 grid-column: 1 / last;
                 grid-row: 2 / 21;
-                background: #fff;
-                z-index: -100;
             }
             
             .section-copy {
-                grid-column: col 1 / gutter 4;
+                grid-column: $grid-text-left;
                 grid-row: 3 / 4;
             }
             .section-images {
-                grid-column: col 6 / last;
+                grid-column: $grid-images-right-edge;
                 grid-row: 1 / 6;
                 max-width: 100%;
             }
@@ -348,7 +348,7 @@ $glunz-box: solid #9D9C9D;
 
     .section-images.section-images-section5 {
         margin-right: 1%;
-        grid-column: col 6 / last;
+        grid-column: $grid-images-right-edge;
         grid-row: 3 / 4;
         max-width: 100%;
     }
@@ -480,7 +480,7 @@ $glunz-box: solid #9D9C9D;
 
     .section-custom.section3 {
         .section-images {
-            grid-column: col 6 / rMrg;
+            grid-column: $grid-images-right;
         }
 
         .section-images-section3-0 {
@@ -496,7 +496,7 @@ $glunz-box: solid #9D9C9D;
 
 
     .section-images.section-images-section5 {
-        grid-column: col 6 / rMrg;
+        grid-column: $grid-images-right;
     }
 
 }

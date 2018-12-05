@@ -1,5 +1,12 @@
 {{load this "lgb-cw"}}
+{{load this "h2o-cw"}}
 {{#> base bodyClass="home"  }}
-<h1>{{glunzsite.title}}</h1>
-  <a href="{{glunzsite.slug}}.html"><h3 style="position: absolute; top: 20px; margin:0 auto; z-index: 100;">{{glunzsite.title}}</h3></a>
-{{/ base }}
+<header>
+  <h1 class="home-title">Chris&nbsp;Murphy</h1>
+  <h2 class="home-subhead">visual design: UX, UI, &amp; Front-End</h2>
+</header>
+<main>
+  <h3><a class="home" href="{{glunzsite.slug}}.html">{{glunzsite.title}}</a></h3>
+  <h3><a href="{{h2oplussite.slug}}.html">{{h2oplussite.title}}</a></h3>
+</main>
+{{/ base }} 
