@@ -12,6 +12,8 @@
         color: transparent;
         background-size: cover;
         line-height: 70%;
+        transition: 0s;
+        text-align: center;
     }
 
     h2 {
@@ -25,6 +27,19 @@
         right: 5%;
     }
 
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: .125em;
+    }
+
+    h4 {
+        font-size: 2.3em;
+    }
+
+    blockquote {
+        margin-bottom: $margin-bottom-std * 6;
+    }
+
     .about-article {
         position: relative;
         width: 100%;
@@ -32,12 +47,11 @@
     }
 
     .bg-logo {
-        width: 90%;
-        left: 5%;
+        width: 150%;
+        left: -25%;
         position: absolute;
-        top: 0;
+        top: -12%;
         z-index: -10;
-        opacity: .85;
         #cm-logo path {
             fill: $base-white;
         }
@@ -45,6 +59,11 @@
 
     .about-article {
         font-size: 1em;
+        margin-bottom: $margin-bottom-std * 4;
+        p {
+            margin-bottom: $margin-bottom-std * 2;
+            line-height: 1.8;
+        }
     }
 
     .about-quote {
@@ -52,11 +71,34 @@
     }
 
     .about-body {
-        width: 30em;
+        max-width: 80%;
+        width: 45em;
         margin: 0 auto;
+        position: relative;
     }
 
     @media (min-width: $md-width) {
+        .about-article {
+            font-size: 1.176em;
+        }
+    }
+
+    @media (min-width: $lg-width) {
+        header {
+            width: 998px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            font-size: 938px;
+        }
+
+        h2 {
+            font-size: 98px;
+        }
+    }
+
+    @media (min-width: $xl-width) {
         .about-article {
             font-size: 1.5em;
         }

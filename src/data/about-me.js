@@ -8,7 +8,7 @@ module.exports = {
             description:   "My long journey from artist to visual designer and front-end developer. While doing a bit of everything on the side",
         content: {
                 quote:   "It’s hip to be square.",
-                quoteAuthor: "&mdash;Huey Lewis & the News",
+                quoteAuthor: "&ndash; Huey Lewis & the News",
                 body: [
                     "I was always a square peg in a round hole. My father, an engineer by trade, expected me to excel in math and I did, but eventually I became drawn to the arts and painting. I neither fit in with the intellectuals because I was too “artsy,” and I didn’t fit in with the art kids, because I was too \"smart.\”",
                     "I pursued my artistic passions studying painting at Rhode Island School of Design. There I incorporated my intellectual sensibilities into my artwork. My work encompassed urban landscapes as vast macro-organism. A constant attempt at reconciling opposites; the artificial with the organic, the rational with the intuitive.",
