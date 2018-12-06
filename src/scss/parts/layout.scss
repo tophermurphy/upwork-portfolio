@@ -1,5 +1,6 @@
 body.page,
-body.home {
+body.home,
+body.about-me {
     background-color: $background-grey;
 }
 
@@ -315,4 +316,10 @@ h1, h2, h3, h4, p, .page-description, .page-info {
         font-size: .9em;
     }
     
+}
+
+#cm-logo {
+    width: 100%;
+    height: 100%;
+
 }

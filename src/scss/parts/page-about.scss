@@ -1,0 +1,65 @@
+.about-me {
+
+    header {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 96vw;
+        letter-spacing: 0;
+        background-clip: text;
+        background-image: url(../images/chris-murphy-portrait.png);
+        color: transparent;
+        background-size: cover;
+        line-height: 70%;
+    }
+
+    h2 {
+        font-size: 8vw;
+        display: inline-block;
+        background: $base-white;
+        border-radius: 1em 1em 1em 1em;
+        padding: .125em .125em .3em .125em;
+        position: absolute;
+        bottom: -5%;
+        right: 5%;
+    }
+
+    .about-article {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .bg-logo {
+        width: 90%;
+        left: 5%;
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        opacity: .85;
+        #cm-logo path {
+            fill: $base-white;
+        }
+    }
+
+    .about-article {
+        font-size: 1em;
+    }
+
+    .about-quote {
+        text-align: center;
+    }
+
+    .about-body {
+        width: 30em;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $md-width) {
+        .about-article {
+            font-size: 1.5em;
+        }
+    }
+
+}

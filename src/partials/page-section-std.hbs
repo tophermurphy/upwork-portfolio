@@ -2,7 +2,7 @@
         <div class="section-images section-images-{{dataKey}}">
             {{#each data.images}}
                 <picture class="image-wrapper image-{{../id}} image-{{../dataKey}}-{{@key}} ">
-                    <img src="{{image filename}}" title="{{imagetitle filename}}" alt="{{alt}}"/>
+                    {{imagelink this}}
                 </picture>
             {{/each}}
         </div>
