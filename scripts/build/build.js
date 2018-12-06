@@ -12,7 +12,7 @@ const DIR_ROOT = path.resolve(__dirname, "../../");
 const WATCH = (process.argv.indexOf("--watch") >= 2);
 const SERVE = (process.argv.indexOf("--serve") >= 2);
 const PORT = SERVE ? parseInt(process.argv[process.argv.indexOf("--serve") + 1]) : -1;
-const SYNC = SERVE ? [new BrowserSyncPlugin({ port: PORT, server: { baseDir: path.join(DIR_ROOT, 'dist') } })] : [];
+const SYNC = SERVE ? [new BrowserSyncPlugin({ port: PORT, server: { baseDir: path.join(DIR_ROOT, 'docs') } })] : [];
 
 
 // Deletes directory contents if the directory is not empt

@@ -25,6 +25,9 @@ module.exports = {
             loader: extractSass.extract({
                 use: [
                     {loader: 'css-loader', options: { sourceMap: true, minimize: true }}, 
+                    {loader: 'postcss-loader', options: { plugins: [ require( 'autoprefixer' )({
+                        browsers: '> 1%, last 2 versions, IE 11'
+                      }) ]} },
                     {loader: 'sass-loader', options: { sourceMap: true }}
                 ]
             }),
