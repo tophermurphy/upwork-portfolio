@@ -1,4 +1,4 @@
-const DIR_DIST = 'dist/';
+const DIR_DIST = 'docs/';
 const DIR_SRC = 'src/';
 const DIR_PAGES = DIR_SRC + 'pages';
 const DIR_HELPERS = DIR_SRC + 'helpers';
