@@ -35,6 +35,7 @@ h3 {
 
 h4, h5, h6 {
     @extend %light-condensed;
+    font-size: 3.8em;
 }
 
 p {
@@ -61,7 +62,9 @@ picture {
     display: block;
 }
 
-header, section {
+header, 
+section, 
+main {
     margin-bottom: $margin-bottom-std * 4;
     @media (min-width: $md-width){
         margin-bottom: $margin-bottom-std * 8;

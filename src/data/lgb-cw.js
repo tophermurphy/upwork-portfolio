@@ -6,6 +6,9 @@ module.exports = {
             type:     "page",
             subtitle: "corporate site & web catalog",
             description:   "Making a historic company relevant with updated branding and providing a sales tool unequalled in the market",
+            thumbnail: {
+                filename: "louis-glunz-website-thumbnail.jpg"
+            },
             roles: [
                 "Visual Design",
                 "UX Design",

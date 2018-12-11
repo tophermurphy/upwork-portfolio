@@ -6,6 +6,9 @@ module.exports = {
             type:     "page",
             subtitle: "e-commerce site",
             description:   "Continuously evolving a brand to stay relevant and raising the quality to compete with prestige brands",
+            thumbnail: {
+                filename: "h2o-plus-website-thumbnail.jpg"
+            },
             roles: [
                 "Visual Design",
                 "Front-End Development",
@@ -174,12 +177,12 @@ module.exports = {
             },
             section7: {
                 body: [
-                    "Over the years at H2O Plus I was able to continually create dymanic imagery, relevant and stunning web sites that remained relevant elevating the brand to compete with larger prestige brands. The site was recognized as MarketLive Site on the Rise in 2011. The quality of work helped gain venture capital and foreign investment."
+                    "Over the years at H2O Plus I was able to continually create dymanic imagery, relevant and stunning web sites that remained relevant elevating the brand to compete with larger prestige brands. The site was recognized as MarketLive <em>Best Site on the Rise</em> in 2011. The quality of work helped gain venture capital and foreign investment."
                 ],
                 images: [
                     {
                         filename: "h2o-plus-website-award.jpg",
-                        alt: "H2O Plus award from MarketLive for website on the rise."
+                        alt: "H2O Plus award from MarketLive for 'Best Site on the Rise.'"
                     }
                 ]
             }

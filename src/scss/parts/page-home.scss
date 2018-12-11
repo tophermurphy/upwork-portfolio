@@ -12,4 +12,58 @@
         margin-top: -18%;
         position: relative;
     }
+
+    .project-thumbs-range {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 100%;
+        width: 100%;
+        height: 100%;
+        max-width: 998px;
+        margin: 0 auto;
+    }
+    .project-thumb {
+        width: 48%;
+        position: relative;
+        a {
+                color: inherit;
+                text-decoration: none;
+        }
+    }
+
+    .project-thumb-img {
+        flex-shrink: 0;
+        box-shadow: $shadows-std;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 100%;
+        margin-bottom: $margin-bottom-std;
+        img {
+            @extend %img-ctr-responsive;
+            top: 0;
+            transform: translateX(-50%);
+        }
+        &:hover {
+            transform: scale(1.0125);
+            transition: .4s;
+        }
+    }
+
+    .thumb-title {
+        @extend %body-header;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 2.5em;
+    }
+
+    .thumb-subtitle {
+        @extend %page-subheader;
+        color: $base-accent;
+        font-size: 1.8em;
+    }
+
+
 }

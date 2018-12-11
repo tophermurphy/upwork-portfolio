@@ -2,14 +2,14 @@
 
 {{#> base baseData=about }} 
     <main class="content content-about-me">
-        <header>
-            <h1>ABOUT</h1>
-            <h2>me</h2>
+        <header class="about-header">
+            <h1 class="about-title">ABOUT</h1>
+            <h2 class="about-subtitle">me</h2>
         </header>
         <article class="about-article">
             <blockquote class="about-quote">
-                <h3> {{about.content.quote}} </h3>
-                <h4> {{{about.content.quoteAuthor}}} </h4>
+                <h3 class="quote-title"> {{about.content.quote}} </h3>
+                <h4 class="quote-author"> {{{about.content.quoteAuthor}}} </h4>
             </blockquote>
             <section class="about-body">
                 {{#each about.content.body}}

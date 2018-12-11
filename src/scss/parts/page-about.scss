@@ -1,10 +1,10 @@
 .about-me {
 
-    header {
+    .about-header {
         position: relative;
     }
 
-    h1 {
+    .about-title {
         font-size: 94vw;
         letter-spacing: 0;
         background-clip: text;
@@ -16,28 +16,32 @@
         text-align: center;
     }
 
-    h2 {
+    .about-subtitle {
         font-size: 6vw;
         display: inline-block;
         background: $base-white;
         border-radius: 1em 1em 1em 1em;
-        padding: .125em .125em .3em .125em;
+        padding: .4em .4em .6em;
         position: absolute;
         bottom: -6%;
         right: 10%;
     }
 
-    h3 {
+    .quote-title {
         text-transform: uppercase;
         margin-bottom: .125em;
     }
 
-    h4 {
+    .quote-author {
         font-size: 2.3em;
     }
 
     blockquote {
         margin-bottom: $margin-bottom-std * 6;
+    }
+
+    .about-link {
+        color: $base-lighter;
     }
 
     .about-article {
@@ -84,16 +88,16 @@
     }
 
     @media (min-width: $lg-width) {
-        header {
+        .about-header {
             width: 998px;
             margin-left: auto;
             margin-right: auto;
         }
-        h1 {
+        .about-title {
             font-size: 938px;
         }
 
-        h2 {
+        .about-subtitle {
             font-size: 60px;
         }
     }
