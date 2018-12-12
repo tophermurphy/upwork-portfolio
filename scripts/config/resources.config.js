@@ -1,3 +1,5 @@
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+
 module.exports = {
     entry: {},
 
@@ -14,5 +16,7 @@ module.exports = {
         }
     ],
 
-    plugins: []
+    plugins: [
+        new ImageminPlugin({})
+    ]
 }

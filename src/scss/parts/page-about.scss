@@ -2,16 +2,20 @@
 
     .about-header {
         position: relative;
+        padding-bottom: $margin-bottom-std / 2;
+        margin-bottom: $margin-bottom-std * 2;
     }
-
+ 
     .about-title {
-        font-size: 94vw;
+        font-size: 96vw;
+        width: 110%;
+        margin-left: -5%;
         letter-spacing: 0;
         background-clip: text;
         background-image: url(../images/chris-murphy-portrait.png);
         color: transparent;
         background-size: cover;
-        line-height: 70%;
+        line-height: 80%;
         transition: 0s;
         text-align: center;
     }
@@ -23,7 +27,7 @@
         border-radius: 1em 1em 1em 1em;
         padding: .4em .4em .6em;
         position: absolute;
-        bottom: -6%;
+        bottom: 0;
         right: 10%;
     }
 
@@ -37,7 +41,7 @@
     }
 
     blockquote {
-        margin-bottom: $margin-bottom-std * 6;
+        margin-bottom: $margin-bottom-std * 2;
     }
 
     .about-link {
@@ -54,7 +58,7 @@
         width: 150%;
         left: -25%;
         position: absolute;
-        top: -12%;
+        top: -24px;
         z-index: -10;
         #cm-logo path {
             fill: $base-white;
@@ -84,6 +88,10 @@
     @media (min-width: $md-width) {
         .about-article {
             font-size: 1.176em;
+        }
+
+        blockquote {
+            margin-bottom: $margin-bottom-std * 4;
         }
     }
 

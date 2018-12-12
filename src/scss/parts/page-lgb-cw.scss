@@ -1,11 +1,14 @@
 //// Begin Page Specific CSS Nest /////
 .page-lgb-cw {
 
-.section-custom {
-    @extend %page-grid-md;
-    @extend %page-grid-lg;
-
+@supports (display: grid){
+    .section-custom {
+        @extend %page-grid-md;
+        @extend %page-grid-lg;
+    
+    }
 }
+
 
 .section-custom.section3 {
     grid-template-rows: repeat(20, 1fr);
@@ -265,244 +268,242 @@ $glunz-box: solid #9D9C9D;
 }
 
 ////// BEGIN MEDIA QUERIES//////
+@supports (display: grid){
 
-@media (min-width: $md-width){
+    @media (min-width: $md-width){
 
-    .section-custom.section3 {
-            &::before {
-                content: "";
-                display: block;
-                background-color: $base-white;
-                z-index: -100;               
-                grid-column: 1 / last;
-                grid-row: 2 / 21;
-            }
-            
-            .section-copy {
-                grid-column: $grid-text-left;
-                grid-row: 3 / 4;
-            }
-            .section-images {
-                grid-column: $grid-images-right-edge;
-                grid-row: 1 / 6;
-                max-width: 100%;
-            }
-    
-            .section-images-section3-0 {
-                grid-row: 1 / 13;
-                margin-bottom: $margin-bottom-std * 2;
-            }
-    
-            .section-images-section3-1 {
-                grid-row: 13 / 21;
-                background: none;
+        .section-custom.section3 {
+                &::before {
+                    content: "";
+                    display: block;
+                    background-color: $base-white;
+                    z-index: -100;               
+                    grid-column: 1 / last;
+                    grid-row: 2 / 21;
+                }
                 
-            }
-    
-            .section3-copy-0 {
-                grid-row: 2 / 21;
-                margin-top: 4rem;
-    
-            }
-    
-            .section3-copy-1 {
-               display: none;
-            }
-    
-            .image-section3-0 {
-                width: 50%;
-                margin-left: 50%;
-            }
-    
-            .image-section3-1{
-                width: 53%;
-                margin-top: -80%;
-            }
-    
-            .image-section3-2{
-                width: 57%;
-                margin-left: 21.5%;
-                margin-top: -55%;
-            }
-    
-            .image-section3-3 {
-                max-width: 100%;
-            }
-    }
-
-
-    .section4 {
-        margin-top: $margin-bottom-std * 12;
-    }
-
-    .image-section4-0 {
-        width: 71%;
-        margin-top: -($margin-bottom-std * 4);
-    }
-    
-    .image-section4-1 {
-        width: 70%;
-        margin-left: 30%;
-        margin-top: -55%;
-    }
-
-    .section-images.section-images-section5 {
-        margin-right: 1%;
-        grid-column: $grid-images-right-edge;
-        grid-row: 3 / 4;
-        max-width: 100%;
-    }
-
-    .image-section5-1 {
-        width: 45%;
-        margin-left: 5%;
-        float: left;
-    }
-
-    .glunz-swatch-wrap {
-        width: 30%;
-        margin-left: 10%;
-        margin-right: 0;
-        float: left;
-    }
-
-    .glunz-swatch-2, .glunz-swatch-5 {
-        flex-grow: 1;
-    }
-    
-    .section-custom.section-custom.section6 {
-        padding-bottom: $margin-bottom-std * 2;
-        .glunzsite-stats {
-            grid-row: 2 / 3;
-        }
-        .glunzsite-users {
-            grid-column: col 1 / gutter 3;
-        }
-        .glunzsite-sessions {
-            grid-column: col 4 / gutter 6;
-        }
-        .section-copy {
-            grid-row: 1 / 4;
-            grid-column: col 8 / rMrg;
-        }
-    }
-}
-
-@media (min-width: 842px){
-    .section-images-section3-0 {
-        grid-row: 1 / 14;
-    }
-
-    .section-images-section3-1 {
-        grid-row: 14 / 21;
+                .section-copy {
+                    grid-column: $grid-text-left;
+                    grid-row: 3 / 4;
+                }
+                .section-images {
+                    grid-column: $grid-images-right-edge;
+                    grid-row: 1 / 6;
+                    max-width: 100%;
+                }
         
-    }
-}
-
-
-@media (min-width: $lg-width){
-
-    .image-section1-0 {
-        width: 62%;
-    }
-    
-    .image-section1-1 {
-        width: 35%;
-        margin-left: 60%;
-        margin-top: -69%;
-        z-index: 10;
-    }
-    
-    .image-section1-2 {
-        width: 80%;
-        margin-left: 19%;
-        margin-top: 4%;
-    }
-
-    .image-section2-0 {
-        width: 42%
-    }
-
-    .image-section2-1 {
-        display: block;
-        width: 58%;
-        margin-left: 42%;
-        margin-top: -53.5%;
-    }
-
-    .image-section2-2 {
-        width: 56%;
-        margin-top: -5%;
-    }
-
-    .image-section2-3 {
-        width: 22%;
-        margin-top: -48%;
-        margin-left: 49%;
-    }
-
-    .image-section2-4 {
-        width: 30%;
-        margin-left: 70%;
-        margin-top: -64%;
-    }
-
-    .image-section2-5 {
-        width: 30%;
-        margin-left: 70%;
-        margin-top: -12%;
-    }
-
-    .image-section2-6 {
-        width: 32%;
-        margin-left: 0;
-        margin-top: -23%;
-    }
-
-    .image-section2-7 {
-        width: 17.5%;
-        margin-left: 31.5%;
-        margin-top: -44.5%;
-    }
-
-    .image-section2-8 {
-        width: 51%;
-        margin-left: 49%;
-        margin-top: -43.5%;
-    }
-
-    .image-section2-9 {
-        display: block;
-        width: 32%;
-        margin-left: 0;
-        margin-top: -27%;
-    }
-
-    .section-custom.section3 {
-        .section-images {
-            grid-column: $grid-images-right;
+                .section-images-section3-0 {
+                    grid-row: 1 / 13;
+                    margin-bottom: $margin-bottom-std * 2;
+                }
+        
+                .section-images-section3-1 {
+                    grid-row: 13 / 21;
+                    background: none;
+                    
+                }
+        
+                .section3-copy-0 {
+                    grid-row: 2 / 21;
+                    margin-top: 4rem;
+        
+                }
+        
+                .section3-copy-1 {
+                display: none;
+                }
+        
+                .image-section3-0 {
+                    width: 50%;
+                    margin-left: 50%;
+                }
+        
+                .image-section3-1{
+                    width: 53%;
+                    margin-top: -80%;
+                }
+        
+                .image-section3-2{
+                    width: 57%;
+                    margin-left: 21.5%;
+                    margin-top: -55%;
+                }
+        
+                .image-section3-3 {
+                    max-width: 100%;
+                }
         }
 
+
+        .section4 {
+            margin-top: $margin-bottom-std * 12;
+        }
+
+        .image-section4-0 {
+            width: 71%;
+            margin-top: -($margin-bottom-std * 4);
+        }
+        
+        .image-section4-1 {
+            width: 70%;
+            margin-left: 30%;
+            margin-top: -55%;
+        }
+
+        .section-images.section-images-section5 {
+            margin-right: 1%;
+            grid-column: $grid-images-right-edge;
+            grid-row: 3 / 4;
+            max-width: 100%;
+        }
+
+        .image-section5-1 {
+            width: 45%;
+            margin-left: 5%;
+            float: left;
+        }
+
+        .glunz-swatch-wrap {
+            width: 30%;
+            margin-left: 10%;
+            margin-right: 0;
+            float: left;
+        }
+
+        .glunz-swatch-2, .glunz-swatch-5 {
+            flex-grow: 1;
+        }
+        
+        .section-custom.section-custom.section6 {
+            padding-bottom: $margin-bottom-std * 2;
+            .glunzsite-stats {
+                grid-row: 2 / 3;
+            }
+            .glunzsite-users {
+                grid-column: col 1 / gutter 3;
+            }
+            .glunzsite-sessions {
+                grid-column: col 4 / gutter 6;
+            }
+            .section-copy {
+                grid-row: 1 / 4;
+                grid-column: col 8 / rMrg;
+            }
+        }
+    }
+
+    @media (min-width: 842px){
         .section-images-section3-0 {
-            grid-row: 1 / 15;
+            grid-row: 1 / 14;
         }
 
         .section-images-section3-1 {
-            grid-row: 15 / 21;
-            margin-bottom: $margin-bottom-std;
+            grid-row: 14 / 21;
+            
+        }
+    }
+
+
+    @media (min-width: $lg-width){
+
+        .image-section1-0 {
+            width: 62%;
+        }
+        
+        .image-section1-1 {
+            width: 35%;
+            margin-left: 60%;
+            margin-top: -69%;
+            z-index: 10;
+        }
+        
+        .image-section1-2 {
+            width: 80%;
+            margin-left: 19%;
+            margin-top: 4%;
         }
 
+        .image-section2-0 {
+            width: 42%
+        }
+
+        .image-section2-1 {
+            display: block;
+            width: 58%;
+            margin-left: 42%;
+            margin-top: -53.5%;
+        }
+
+        .image-section2-2 {
+            width: 56%;
+            margin-top: -5%;
+        }
+
+        .image-section2-3 {
+            width: 22%;
+            margin-top: -48%;
+            margin-left: 49%;
+        }
+
+        .image-section2-4 {
+            width: 30%;
+            margin-left: 70%;
+            margin-top: -64%;
+        }
+
+        .image-section2-5 {
+            width: 30%;
+            margin-left: 70%;
+            margin-top: -12%;
+        }
+
+        .image-section2-6 {
+            width: 32%;
+            margin-left: 0;
+            margin-top: -23%;
+        }
+
+        .image-section2-7 {
+            width: 17.5%;
+            margin-left: 31.5%;
+            margin-top: -44.5%;
+        }
+
+        .image-section2-8 {
+            width: 51%;
+            margin-left: 49%;
+            margin-top: -43.5%;
+        }
+
+        .image-section2-9 {
+            display: block;
+            width: 32%;
+            margin-left: 0;
+            margin-top: -27%;
+        }
+
+        .section-custom.section3 {
+            .section-images {
+                grid-column: $grid-images-right;
+            }
+
+            .section-images-section3-0 {
+                grid-row: 1 / 15;
+            }
+
+            .section-images-section3-1 {
+                grid-row: 15 / 21;
+                margin-bottom: $margin-bottom-std;
+            }
+
+        }
+
+        .section-images.section-images-section5 {
+            grid-column: $grid-images-right;
+        }
     }
-
-
-    .section-images.section-images-section5 {
-        grid-column: $grid-images-right;
-    }
-
+//////////////End Media Queries///////////
 }
-
-
-
 
 
 

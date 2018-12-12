@@ -1,16 +1,158 @@
+///////////Begin Page CSS Wrap//////////
 .home {
+
+    .home-header {
+        position: relative;
+    }
+
     .home-title {
-        font-size: 40vw;
+        font-size: 41vw;
         letter-spacing: 0;
-        margin-left: -.5vw;
+        margin-bottom: 60px;
+        text-align: center;
+        width: 110%;
+        margin-left: -5%;
     }
 
     .home-subhead {
-        text-align: center;
-        padding: .25em;
-        background: $background-grey;
-        margin-top: -18%;
-        position: relative;
+        font-size: 1em;
+        color: $base-accent;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        @media (min-width: 470px){
+            font-size: 1.2em;
+        }
+    }
+
+    .home-subtitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        top: 33.5vw;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        min-width: 260px;
+    }
+
+    .home-subtitle-logo {
+        width: 5.2em;
+        margin-right: 1em;
+        margin-top: -2px;
+    }
+
+    .home-subtitle-copy {
+
+    }
+
+    .home-subtitle-copy-1 {
+        font-size: 3.2em;
+        letter-spacing: .02em;
+        margin-bottom: 0;
+    }
+
+    .home-subtitle-copy-2 {
+        @extend %body-text;
+        font-size: 1.4em;
+        font-variant: small-caps;
+        margin-bottom: 0;
+    }
+
+    .home-description {
+        background: $base-white;
+        p {
+            font-size: 1.8em;
+            display: block;
+            max-width: 16em;
+            margin: $margin-bottom-std auto;
+            text-align: center;
+            @media(min-width: 510px){
+                max-width: 100%;
+            }
+        }
+
+        .home-description-brk {
+            display: none;
+            @media(min-width: 510px){
+                display: block;
+            }
+        }
+
+    }
+
+    @media(min-width: $md-width){
+
+        .home-header {
+            margin-bottom: $margin-bottom-std * 6;
+        }
+
+        .home-title {
+            margin-bottom: $margin-bottom-std * 2;
+        }
+
+        .home-subhead {
+            flex-direction: row;
+            font-size: 1em;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 8.5vw;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: $background-grey;
+            padding: .5em 0;
+        }
+
+        .home-subtitle {
+            position: relative;
+            top: 0;
+            margin: 0;
+            justify-content: flex-start;
+            padding-right: 2em;
+            margin-right: 2em;
+            border-right: solid 1px #{lighten($base-accent, 20%)};
+        }
+
+        .home-description {
+            background: none;
+            p {
+                margin: 0;
+                text-align: left;
+                line-height: 1.2;
+            }
+        }
+
+    }
+
+    @media(min-width: $lg-width){
+        .home-subhead {
+            font-size: 1.1em;
+        }
+        .home-description {
+            p {
+                line-height: 1.1;
+            }
+        }
+    }
+
+    @media (min-width: 1320px){
+        .home-subhead {
+            font-size: 1.2em;
+        }
+    }
+
+    @media (min-width: $xl-width){
+        .home-title {
+            font-size: 560px;
+        }
+
+        .home-subhead {
+            bottom: 119px;
+        }
     }
 
     .project-thumbs-range {
@@ -21,11 +163,12 @@
         flex-basis: 100%;
         width: 100%;
         height: 100%;
-        max-width: 998px;
+        max-width: 1060px;
         margin: 0 auto;
     }
     .project-thumb {
         width: 48%;
+        max-width: 480px;
         position: relative;
         a {
                 color: inherit;
@@ -52,6 +195,16 @@
         }
     }
 
+    .thumb-caption {
+        font-size: 1em;
+        @media(min-width: $md-width){
+            font-size: 1.1em;
+        }
+        @media(min-width: $lg-width){
+            font-size: 1.2em;
+        }
+    }
+
     .thumb-title {
         @extend %body-header;
         margin-bottom: 0;
@@ -65,5 +218,5 @@
         font-size: 1.8em;
     }
 
-
+////////////End Page CSS Wrap//////////
 }

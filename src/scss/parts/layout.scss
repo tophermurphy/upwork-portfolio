@@ -129,7 +129,9 @@ body.about-me {
 }
 
 .contact-bullet {
-    align-self: center;
+    margin-left: 5.5em;
+    margin-top: .3em;
+    margin-bottom: .3em;
 }
 
 .contact-link-image {
@@ -144,6 +146,9 @@ body.about-me {
 @media (min-width: 612px){
     .footer-nav {
         font-size: 1.25em;
+    }
+    .contact-bullet {
+        margin: 0;
     }
     .contact-links {
         flex-direction: row;
@@ -288,18 +293,20 @@ body.about-me {
     margin-bottom: $margin-bottom-std;
 }
 
-.section-standard.section-text-left,
-.section-standard.section-text-right  {
-    @extend %page-grid-md;
-    @extend %page-grid-lg;
-}
 
-.page-header {
-    @extend %page-grid-md;
-    @extend %page-grid-lg;
-    grid-template-rows: auto auto auto;
-}
+@supports (display: grid){
+    .section-standard.section-text-left,
+    .section-standard.section-text-right  {
+        @extend %page-grid-md;
+        @extend %page-grid-lg;
+    }
 
+    .page-header {
+        @extend %page-grid-md;
+        @extend %page-grid-lg;
+        grid-template-rows: auto auto auto;
+    }
+}
 
 
 @media (min-width: $md-width){
