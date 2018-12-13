@@ -1,29 +1,29 @@
 // FONTS
-$page-header-font: rama-gothic-c, Impact, sans-serif; 
+$page-header-font: rama-gothic-c, 'Rama Gothic C', Impact, sans-serif; 
 %page-header {
     font-family: $page-header-font;
     font-weight: 900;
 }
 
-$page-subheader-font: minion-3-subhead, Times New Roman, Times, serif; 
+$page-subheader-font: minion-3-subhead, 'Minion 3 Subhead', Times New Roman, Times, serif; 
 %page-subheader {
     font-family: $page-subheader-font;
     font-weight: 400;
 }
 
-$body-header-font: rama-gothic-m, Impact, sans-serif; 
+$body-header-font: rama-gothic-m, 'Rama Gothic M', Impact, sans-serif; 
 %body-header {
     font-family: $body-header-font;
     font-weight: 700;
 }
 
-$body-text-font: minion-3, Times New Roman, Times, serif;
+$body-text-font: minion-3, 'Minion 3', Times New Roman, Times, serif;
 %body-text {
     font-family: $body-text-font;
     font-weight: 400;
 }
 
-$light-condensed-font: rama-gothic-e, Impact, sans-serif; 
+$light-condensed-font: rama-gothic-e, 'Rama Gothic E', Arial, sans-serif; 
 %light-condensed {
     font-family: $light-condensed-font;
     font-weight: 300;
@@ -169,7 +169,7 @@ $grid-images-left: col 1 / gutter 7;
     min-height: 100%;
     width: auto;
     min-width: 100%;
-    max-width: 120%;
+    max-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
