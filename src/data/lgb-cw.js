@@ -24,14 +24,17 @@ module.exports = {
                 "Illustrator", 
                 "Photoshop", 
                 "Survey Monkey"
-            ],
+            ], 
             platforms: [
                 "Wordpress"
             ],
             headImages: [
                 {
                     filename: "cheers.jpg",
-                    alt: "People toasting craft beer."
+                    alt: "People toasting craft beer.",
+                    widths: [324, 416, 832, 1248],
+                    mobileWidth: '90vw',
+                    defaultWidth: '372px'
                 },
                 {
                     filename: "brew-kettles.jpg",

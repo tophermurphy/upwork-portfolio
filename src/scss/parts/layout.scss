@@ -260,6 +260,7 @@ body.about-me {
     } 
     img {
         @extend %img-ctr-responsive;
+        max-width: 150%;
     }
 }
 

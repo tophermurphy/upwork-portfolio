@@ -169,11 +169,12 @@ $grid-images-left: col 1 / gutter 7;
     min-height: 100%;
     width: auto;
     min-width: 100%;
-    max-width: 100%;
+    max-width: 110%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    // object-fit: cover;
 }
 
 
