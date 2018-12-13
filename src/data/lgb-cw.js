@@ -51,15 +51,24 @@ module.exports = {
                 images: [
                     {
                         filename: "glunzbeers-home-desktop.jpg",
-                        alt: "Desktop home page for glunzbeers.com"
+                        alt: "Desktop home page for glunzbeers.com",
+                        widths: [209, 372, 744, 1116],
+                        mobileWidth: '58vw',
+                        defaultWidth: '372px'
                     },
                     {
-                        filename: "glunzbeers-home-mobile.png",
-                        alt: "Mobile home page for glunzbeers.com"
+                        filename: "glunzbeers-home-mobile.jpg",
+                        alt: "Mobile home page for glunzbeers.com",
+                        widths: [114, 210, 420, 840],
+                        mobileWidth: '31.5vw',
+                        defaultWidth: '210px'
                     },
                     {
-                        filename: "glunzbeers-home-tablet.png",
-                        alt: "Tablet home page for glunzbeers.com"
+                        filename: "glunzbeers-home-tablet.jpg",
+                        alt: "Tablet home page for glunzbeers.com",
+                        widths: [252, 480, 960, 1440],
+                        mobileWidth: '70vw',
+                        defaultWidth: '480px'
                     }
                 ]
             },

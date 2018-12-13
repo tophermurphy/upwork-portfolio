@@ -24,6 +24,10 @@
 
 .image-section1-0 {
     width: 58%;
+    // max-width: 371px;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    overflow: hidden;
 }
 
 .image-section1-1 {
@@ -31,12 +35,16 @@
     margin-left: 63%;
     margin-top: -75%;
     z-index: 10;
+    border-radius: 6%;
+    overflow: hidden;
 }
 
 .image-section1-2 {
     width: 70%;
     margin-left: 32%;
     margin-top: -7%;
+    border-radius: 4%;
+    overflow: hidden;
 }
 
 .image-section2-0 {
