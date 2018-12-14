@@ -25,15 +25,24 @@ module.exports = {
             headImages: [
                 {
                     filename: "serum-splash.jpg",
-                    alt: "Serum bottle emerging from a rippling pool of water."
+                    alt: "Serum bottle emerging from a rippling pool of water.",
+                    widths: [ 524, 1048, 1572],
+                    mobileWidth: '90vw',
+                    defaultWidth: '524px'
                 },
                 {
                     filename: "shiny-products.jpg",
-                    alt: "A trio of highly reflective skincare jars and tube."
+                    alt: "A trio of highly reflective skincare jars and tube.",
+                    widths: [240, 278, 526, 804],
+                    mobileWidth: '45vw',
+                    defaultWidth: '278px'
                 },
                 {
                     filename: "shampoo-texture.jpg",
-                    alt: "A creamy green shampoo texture."
+                    alt: "A creamy green shampoo texture.",
+                    widths: [240, 365, 690, 1055],
+                    mobileWidth: '45vw',
+                    defaultWidth: '365px'
                 }
             ],
         content: {
@@ -184,6 +193,9 @@ module.exports = {
                     {
                         filename: "h2o-photography-product-silhouettes.jpg",
                         alt: "A collection of different product silhouette photos.",
+                        widths: [360, 600, 1200, 1800],
+                        mobileWidth: '100vw',
+                        defaultWidth: '600px'
                         
                     },
                     {
@@ -193,7 +205,7 @@ module.exports = {
                         mobileWidth: '44vw',
                         defaultWidth: '162px'
                     },
-                    {
+                    { 
                         filename: "h2o-plus-photography-whitening.jpg",
                         alt: "A styled photo of whitening serum on a bright and bubbly background.",
                         widths: [202, 216, 432, 864],
@@ -202,19 +214,31 @@ module.exports = {
                     },
                     {
                         filename: "h2o-plus-photography-lip-candy.jpg",
-                        alt: "A styled photo of lip balm on a background of candy hearts."
+                        alt: "A styled photo of lip balm on a background of candy hearts.",
+                        widths: [195, 222, 444, 666],
+                        mobileWidth: '54vw',
+                        defaultWidth: '222px'
                     },
                     {
                         filename: "h2o-plus-photography-night-treatment.jpg",
-                        alt: "A styled photo of a night treatment gel on a starry night background with rippling water."
+                        alt: "A styled photo of a night treatment gel on a starry night background with rippling water.",
+                        widths: [238, 260, 520, 780],
+                        mobileWidth: '46vw',
+                        defaultWidth: '260px'
                     },
                     {
                         filename: "h2o-plus-photography-holiday-sparkles.jpg",
-                        alt: "A styled photo of a skin care collection on a background of festive red holiday sparkles."
+                        alt: "A styled photo of a skin care collection on a background of festive red holiday sparkles.",
+                        widths: [194, 209, 418, 627],
+                        mobileWidth: '48vw',
+                        defaultWidth: '209px'
                     },
                     {
                         filename: "h2o-plus-photography-bath-bubbles.jpg",
-                        alt: "A styled photo of a pair of bath washes amidst floating bubbles."
+                        alt: "A styled photo of a pair of bath washes amidst floating bubbles.",
+                        widths: [187, 201, 402, 804],
+                        mobileWidth: '52vw',
+                        defaultWidth: '201px'
                     }
                 ]
             },
@@ -225,7 +249,10 @@ module.exports = {
                 images: [
                     {
                         filename: "h2o-plus-website-award.jpg",
-                        alt: "H2O Plus award from MarketLive for 'Best Site on the Rise.'"
+                        alt: "H2O Plus award from MarketLive for 'Best Site on the Rise.'",
+                        widths: [324, 336, 672, 1008],
+                        mobileWidth: '100vw',
+                        defaultWidth: '336px'
                     }
                 ]
             }
