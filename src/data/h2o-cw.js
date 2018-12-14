@@ -46,23 +46,38 @@ module.exports = {
                 images: [
                     {
                         filename: "h20-plus-classic-homepage-0.jpg",
-                        alt: "H2O Plus earliest homepage from the 90's"
+                        alt: "H2O Plus earliest homepage from the 90's",
+                        widths: [245, 384, 768, 1152],
+                        mobileWidth: '68vw',
+                        defaultWidth: '384px'
                     },
                     {
                         filename: "h20-plus-classic-homepage-1.jpg",
-                        alt: "H2O Plus classic homepage, with a lighter cleaner feel."
+                        alt: "H2O Plus classic homepage, with a lighter cleaner feel.",
+                        widths: [218, 384, 768, 1152],
+                        mobileWidth: '68vw',
+                        defaultWidth: '384px'
                     },
                     {
                         filename: "h20-plus-classic-homepage-2.jpg",
-                        alt: "H2O Plus transistional homepage with a deep undersea background."
+                        alt: "H2O Plus transistional homepage with a deep undersea background.",
+                        widths: [231, 360, 720, 1080],
+                        mobileWidth: '64vw',
+                        defaultWidth: '360px'
                     },
                     {
                         filename: "h20-plus-classic-homepage-3.jpg",
-                        alt: "H2O Plus rebranding homepage with a boxless look and a deep water-like background."
+                        alt: "H2O Plus rebranding homepage with a boxless look and a deep water-like background.",
+                        widths: [260, 390, 780, 1170],
+                        mobileWidth: '72vw',
+                        defaultWidth: '390px'
                     },
                     {
                         filename: "h20-plus-classic-homepage-4.jpg",
-                        alt: "H2O Plus rebranding homepage cleaning up the previous homepage and creating a fresh clinical look."
+                        alt: "H2O Plus rebranding homepage cleaning up the previous homepage and creating a fresh clinical look.",
+                        widths: [310, 462, 924, 1386],
+                        mobileWidth: '86vw',
+                        defaultWidth: '462px'
                     }
                     ]
                     
@@ -76,7 +91,10 @@ module.exports = {
                 images: [
                     {
                         filename: "h2o-plus-homepage.jpg",
-                        alt: "H2O Plus homepage. The fruition of a brand repositioning, for a clean, clinical look."
+                        alt: "H2O Plus homepage. The fruition of a brand repositioning, for a clean, clinical look.",
+                        widths: [360, 600, 1200, 1800],
+                        mobileWidth: '100vw',
+                        defaultWidth: '600px'
                     },
                 ]
             },
@@ -97,7 +115,10 @@ module.exports = {
                     },
                     {
                         filename: "h20-plus-gateway.jpg",
-                        alt: "H2O Plus gateway page featuring the different skin care collections."
+                        alt: "H2O Plus gateway page featuring the different skin care collections.",
+                        widths: [360, 600, 1200, 1800],
+                        mobileWidth: '100vw',
+                        defaultWidth: '360px'
                     }
                 ]
             },
@@ -110,7 +131,10 @@ module.exports = {
                 images: [
                     {
                         filename: "h2o-plus-product-details.jpg",
-                        alt: "H2O Plus product details page, featuring a product description, suggested products above the fold, key elements and full ingredients, videos, media appearances and reviews."
+                        alt: "H2O Plus product details page, featuring a product description, suggested products above the fold, key elements and full ingredients, videos, media appearances and reviews.",
+                        widths: [360, 600, 1200, 1800],
+                        mobileWidth: '100vw',
+                        defaultWidth: '360px'
                     }
                 ]
             },
@@ -122,19 +146,31 @@ module.exports = {
                 images: [
                     {
                         filename: "h20-plus-landing-page-0.jpg",
-                        alt: "H2O Plus landing page featuring the skin care collections."
+                        alt: "H2O Plus landing page featuring the skin care collections.",
+                        widths: [180, 300, 600, 900],
+                        mobileWidth: '50vw',
+                        defaultWidth: '300px'
                     },
                     {
                         filename: "h20-plus-landing-page-1.jpg",
-                        alt: "H2O Plus landing page showing the transition to the rebranded packaging."
+                        alt: "H2O Plus landing page showing the transition to the rebranded packaging.",
+                        widths: [188, 312, 624, 936],
+                        mobileWidth: '52vw',
+                        defaultWidth: '312px'
                     },
                     {
                         filename: "h20-plus-landing-page-2.jpg",
-                        alt: "H2O Plus landing page featuring the company's many philanthropic endeavors."
+                        alt: "H2O Plus landing page featuring the company's many philanthropic endeavors.",
+                        widths: [184, 306, 612, 918],
+                        mobileWidth: '51vw',
+                        defaultWidth: '306px'
                     },
                     {
                         filename: "h20-plus-landing-page-3.jpg",
-                        alt: "H2O Plus landing page selling the benefits of the customer loyalty program."
+                        alt: "H2O Plus landing page selling the benefits of the customer loyalty program.",
+                        widths: [238, 396, 792, 1188],
+                        mobileWidth: '66vw',
+                        defaultWidth: '396px'
                     }
                 ]
             },
@@ -147,15 +183,22 @@ module.exports = {
                 images: [
                     {
                         filename: "h2o-photography-product-silhouettes.jpg",
-                        alt: "A collection of different product silhouette photos."
+                        alt: "A collection of different product silhouette photos.",
+                        
                     },
                     {
                         filename: "h2o-plus-photography-serum-splash.jpg",
-                        alt: "A styled photo of serum in a rippling pool of water."
+                        alt: "A styled photo of serum in a rippling pool of water.",
+                        widths: [159, 162, 324, 648],
+                        mobileWidth: '44vw',
+                        defaultWidth: '162px'
                     },
                     {
                         filename: "h2o-plus-photography-whitening.jpg",
-                        alt: "A styled photo of whitening serum on a bright and bubbly background."
+                        alt: "A styled photo of whitening serum on a bright and bubbly background.",
+                        widths: [202, 216, 432, 864],
+                        mobileWidth: '56vw',
+                        defaultWidth: '216px'
                     },
                     {
                         filename: "h2o-plus-photography-lip-candy.jpg",
