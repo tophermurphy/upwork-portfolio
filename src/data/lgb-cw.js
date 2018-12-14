@@ -38,11 +38,17 @@ module.exports = {
                 },
                 {
                     filename: "brew-kettles.jpg",
-                    alt: "A brewhouse kettle."
+                    alt: "A brewhouse kettle.",
+                    widths: [239, 263, 526, 789],
+                    mobileWidth: '45vw',
+                    defaultWidth: '372px'
                 },
                 {
                     filename: "glunz-history.jpg",
-                    alt: "An early horse drawn beer buggy from the 19th Century for Louis Glunz Beer."
+                    alt: "An early horse drawn beer buggy from the 19th Century for Louis Glunz Beer.",
+                    widths: [240, 345, 690, 1035],
+                    mobileWidth: '45vw',
+                    defaultWidth: '345px'
                 }
             ],
         content: {
@@ -132,19 +138,31 @@ module.exports = {
                 images: [
                     {
                         filename: "glunzbeers-craft-contents-page.jpg",
-                        alt: "Index of American craft breweries for glunzbeers.com"
+                        alt: "Index of American craft breweries for glunzbeers.com", 
+                        widths: [200, 300, 600, 900],
+                        mobileWidth: '55.5vw',
+                        defaultWidth: '300px' 
                     },
                     {
                         filename: "glunzbeers-brewery-segments-page.jpg",
-                        alt: "Brewery segments page for glunzbeers.com"
+                        alt: "Brewery segments page for glunzbeers.com",
+                        widths: [211, 318, 632, 950],
+                        mobileWidth: '58.5vw',
+                        defaultWidth: '318px'
                     },
                     {
                         filename: "glunzbeers-product-search-page.jpg",
-                        alt: "Product search page for glunzbeers.com"
+                        alt: "Product search page for glunzbeers.com",
+                        widths: [229, 342, 684, 1026],
+                        mobileWidth: '63.5vw',
+                        defaultWidth: '342px'
                     },
                     {
                         filename: "glunzbeers-product-details-page.jpg",
-                        alt: "Product details page for glunzbeers.com"
+                        alt: "Product details page for glunzbeers.com",
+                        widths: [360, 600, 1200, 1800],
+                        mobileWidth: '100vw',
+                        defaultWidth: '600px'
                     }
                 ]
             },
@@ -157,11 +175,17 @@ module.exports = {
                 images: [
                      {
                     filename: "glunzbeers-what-we-offer-page.jpg",
-                    alt: "A landing page dedicated to telling what specifically Louis Glunz Beer Inc. has to offer accounts, suppliers and consumers."
+                    alt: "A landing page dedicated to telling what specifically Louis Glunz Beer Inc. has to offer accounts, suppliers and consumers.",
+                    widths: [309, 426, 852, 1278],
+                    mobileWidth: '85.6vw',
+                    defaultWidth: '426px'
                 },
                 {
                     filename: "glunzbeers-who-we-are-page.jpg",
-                    alt: "A landing page that tells the story of Louis Glunz Beer Inc."
+                    alt: "A landing page that tells the story of Louis Glunz Beer Inc.",
+                    widths: [296, 420, 840, 1260],
+                    mobileWidth: '82vw',
+                    defaultWidth: '420px'
                 }
                 ]
             },
