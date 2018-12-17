@@ -89,43 +89,73 @@ module.exports = {
                 images: [
                     {
                         filename: "glunzbeers-wireframe-0.png",
-                        alt: "Desktop home page wireframe for glunzbeers.com"
+                        alt: "Desktop home page wireframe for glunzbeers.com",
+                        widths: [180, 252, 504, 756],
+                        mobileWidth: '50vw',
+                        defaultWidth: '252px'
                     },
                     {
                         filename: "glunzbeers-wireframe-1.png",
-                        alt: "Desktop product search page wireframe for glunzbeers.com"
+                        alt: "Desktop product search page wireframe for glunzbeers.com",
+                        widths: [348, 696, 1152],
+                        mobileWidth: '50vw',
+                        defaultWidth: '348px'
                     },
                     {
                         filename: "glunzbeers-wireframe-2.png",
-                        alt: "Desktop product details page wireframe for glunzbeers.com"
+                        alt: "Desktop product details page wireframe for glunzbeers.com",
+                        widths: [196, 336, 672, 1008],
+                        mobileWidth: '54.3vw',
+                        defaultWidth: '336px'
                     },
                     {
                         filename: "glunzbeers-wireframe-3.png",
-                        alt: "Mobile search filters wireframe for glunzbeers.com"
+                        alt: "Mobile search filters wireframe for glunzbeers.com",
+                        widths: [77, 132, 264, 528],
+                        mobileWidth: '21.4vw',
+                        defaultWidth: '132px'
                     },
                     {
                         filename: "glunzbeers-wireframe-4.png",
-                        alt: "Product search cards wireframe for glunzbeers.com"
+                        alt: "Product search cards wireframe for glunzbeers.com",
+                        widths: [180, 360, 720],
+                        mobileWidth: '50vw',
+                        defaultWidth: '180px'
                     },
                     {
                         filename: "glunzbeers-wireframe-5.png",
-                        alt: "Product search cards wireframe for glunzbeers.com"
+                        alt: "Product search cards wireframe for glunzbeers.com",
+                        widths: [101, 180, 360, 720],
+                        mobileWidth: '28vw',
+                        defaultWidth: '180px'
                     },
                     {
                         filename: "glunzbeers-wireframe-6.png",
-                        alt: "Wireframe notes for glunzbeers.com"
+                        alt: "Wireframe notes for glunzbeers.com",
+                        widths: [108, 192, 384, 576],
+                        mobileWidth: '30vw',
+                        defaultWidth: '192px'
                     },
                     {
                         filename: "glunzbeers-wireframe-7.png",
-                        alt: "Mobile product details page wireframe for glunzbeers.com"
+                        alt: "Mobile product details page wireframe for glunzbeers.com",
+                        widths: [60, 105, 210, 420],
+                        mobileWidth: '16.6vw',
+                        defaultWidth: '105px'
                     },
                     {
                         filename: "glunzbeers-wireframe-8.png",
-                        alt: "Product search page wireframe for glunzbeers.com"
+                        alt: "Product search page wireframe for glunzbeers.com",
+                        widths: [177, 306, 612, 918],
+                        mobileWidth: '49vw',
+                        defaultWidth: '306px'
                     },
                     {
                         filename: "glunzbeers-wireframe-9.png",
-                        alt: "Brewery details tablet page wireframe for glunzbeers.com"
+                        alt: "Brewery details tablet page wireframe for glunzbeers.com",
+                        widths: [192, 384, 768 ],
+                        mobileWidth: '50vw',
+                        defaultWidth: '192px'
                     }
                 ]
             },
