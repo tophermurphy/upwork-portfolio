@@ -83,10 +83,17 @@
 
     }
 
+    .thumb-caption {
+        margin-left: 5%;
+        @media (min-width: 1116px){
+            margin-left: 0;
+        }
+    }
+
     @media(min-width: $md-width){
 
         .home-header {
-            margin-bottom: $margin-bottom-std * 6;
+            margin-bottom: $margin-bottom-std * 4;
         }
 
         .home-title {
@@ -170,6 +177,7 @@
         width: 48%;
         max-width: 480px;
         position: relative;
+        margin-bottom: $margin-bottom-std * 4;
         a {
                 color: inherit;
                 text-decoration: none;

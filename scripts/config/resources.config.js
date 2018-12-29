@@ -1,7 +1,10 @@
-const ImageminPlugin = require('imagemin-webpack-plugin').default
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const path = require('path');
 
 module.exports = {
-    entry: {},
+    entry: {
+        'main.js': path.join(__dirname, '../../', 'src/main.js')
+    },
 
     loaders: [
         {
@@ -17,6 +20,8 @@ module.exports = {
     ],
 
     plugins: [
-        new ImageminPlugin({})
+        new ImageminPlugin({
+            disable: process.env.NODE_ENV !== 'production'
+        })
     ]
 }

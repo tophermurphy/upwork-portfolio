@@ -65,16 +65,18 @@ function time () {
 }
 
 function callback (err, stats) {
+    const strOpt = {colors: true, assets: false, chunks: false, entrypoints: false, children: false};
+
     if (err) {
         throw err;
     }
     
     if (stats.hasErrors()) {
         console.log('  Build finished with errors!\n');
-        console.log(stats.toString());
+        console.log(stats.toString(strOpt));
         process.exit(1);
     } else {
-        console.log(color.g(stats.toString().split(/\n/).filter(str=>/\[emitted\]/.test(str)).join('\n')));
+        console.log(color.g(stats.toString(strOpt).split(/\n/).filter(str=>/\[emitted\]/.test(str)).join('\n')));
     }
 
     console.log(`   [${color.y(time())}]`, WATCH ? 'Watching for changes ...':'Build finished successfully!');

@@ -159,10 +159,10 @@ $glunz-box: solid #9D9C9D;
 
 .image-section5-0 {
     width: 62%;
-    padding: 2% 6% 1% 9%;
+    padding: 2% 6% 1.8% 9%;
     margin: 6% 0 6.5%;
     background-image: linear-gradient(to right, #e7aa04, #a3651f);
-    display: inline-block;
+    display: block;
 
 
 }
@@ -392,11 +392,16 @@ $glunz-box: solid #9D9C9D;
             }
             .glunzsite-sessions {
                 grid-column: col 4 / gutter 6;
-            }
+            } 
             .section-copy {
                 grid-row: 1 / 4;
                 grid-column: col 8 / rMrg;
             }
+        }
+
+        .image-section5-0 {
+            width: 45%;
+            margin: 4% 0 8%;
         }
     }
 
@@ -509,6 +514,7 @@ $glunz-box: solid #9D9C9D;
         .section-images.section-images-section5 {
             grid-column: $grid-images-right;
         }
+
     }
 //////////////End Media Queries///////////
 }

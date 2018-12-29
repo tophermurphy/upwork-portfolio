@@ -12,5 +12,5 @@ module.exports = {
 
     resources: resources,
     pages: pages,
-    scss: scss
+    scss: scss,
 };

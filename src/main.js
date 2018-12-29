@@ -1,0 +1,2 @@
+import './js/paralax.js'
+
