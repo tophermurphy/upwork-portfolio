@@ -1,5 +1,6 @@
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -22,6 +23,13 @@ module.exports = {
     plugins: [
         new ImageminPlugin({
             disable: process.env.NODE_ENV !== 'production'
-        })
+        }),
+
+        new CopyWebpackPlugin([
+            {
+            from: path.join(__dirname, '../../', 'src/CNAME'),
+            to: path.join(__dirname, '../../', 'docs')
+            }
+        ]) 
     ]
 }
