@@ -2,6 +2,9 @@ body.page,
 body.home,
 body.about-me {
     background-color: $background-grey;
+    background: linear-gradient(rgba(250,250,250,.8),rgba(250,250,250,.8)), url(../images/noisy-texture-100x100.png) repeat;
+
+    // background: url(../images/noisy-texture-100x100.png) auto repeat;
 }
 
 ///////////// Components//////////////////
@@ -294,6 +297,72 @@ body.about-me {
     margin-bottom: $margin-bottom-std;
 }
 
+.work-nav-container {
+    @extend .clearfix;
+    font-size: 1em;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto #{$margin-bottom-std * 4} auto;
+   }
+
+.work-nav {
+    width: 49.5%;
+    width: calc(50% - 1px);
+    display: inline-block;
+}
+
+.work-nav-figure {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    overflow: hidden;
+    background: darken($base-accent, 40%);
+    color: white;
+    img {
+        position: absolute;
+        top: 0;
+        filter: blur(5px);
+        opacity: .3;
+        transition: .3s;
+    }
+}
+
+.work-nav-figure:hover img {
+    opacity: .85;
+    filter: none;
+}
+
+.work-nav-caption {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-size: .675em;
+}
+
+.work-nav-title {
+    @extend %body-header;
+}
+
+.work-nav-subtitle {
+    font-size: 3.4em;
+}
+
+.work-nav-title,
+.work-nav-subtitle {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.work-nav-left {
+    float: left;
+}
+
+.work-nav-right {
+    float: right;
+}
+
 
 @supports (display: grid){
     .section-standard.section-text-left,
@@ -361,9 +430,10 @@ body.about-me {
         }
 
         .page-title {
+            @include max-auto(140em);
             grid-column: lMrg / last;
             grid-row: 2;
-            margin: 0 0 $margin-bottom-std 0;
+            margin: 0 auto $margin-bottom-std auto;
         }
 
         .page-description {
@@ -435,6 +505,27 @@ body.about-me {
          margin: 0;
          padding: 0;
      }
+
+     .section-images .image-wrapper {
+        transition: .3s;
+        &:hover {
+            z-index: 100;
+            transform: scale(1.1);
+        }
+    }
+
+    .work-nav {
+        width: 49%;
+    }
+    
+    .work-nav-figure {
+        padding-bottom: 40%;
+    }
+    
+    .work-nav-caption {
+        font-size: 1em;
+    }
+    
     
 }
 
@@ -477,11 +568,10 @@ body.about-me {
 }
 
 @media (min-width: $xl-width){
-    .page-title{
-        @include max-auto(140em);
-    }
+ 
     
-    .content-page {
+    .content-page,
+    .work-nav-container {
         font-size: 1.1em;
     }
 
@@ -501,3 +591,5 @@ body.about-me {
 address.contact-links a#linkedinoverride.linkedin-link.contact-link{
     display: block!important;
 }
+
+

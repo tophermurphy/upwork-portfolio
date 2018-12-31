@@ -1,6 +1,6 @@
 {{load this "about-me"}}
 
-{{#> base baseData=about }} 
+{{#> base baseData=aboutMe }} 
     <main class="content content-about-me">
         <header class="about-header">
             <h1 class="about-title">ABOUT</h1>
@@ -8,11 +8,11 @@
         </header>
         <article class="about-article">
             <blockquote class="about-quote">
-                <h3 class="quote-title"> {{about.content.quote}} </h3>
-                <h4 class="quote-author"> {{{about.content.quoteAuthor}}} </h4>
+                <h3 class="quote-title"> {{aboutMe.content.quote}} </h3>
+                <h4 class="quote-author"> {{{aboutMe.content.quoteAuthor}}} </h4>
             </blockquote>
             <section class="about-body">
-                {{#each about.content.body}}
+                {{#each aboutMe.content.body}}
                     <p>{{{this}}}</p>
                 {{/each}}
 

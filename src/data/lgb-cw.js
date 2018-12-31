@@ -1,5 +1,5 @@
 module.exports = {
-    glunzsite: {
+    lgbCw: {
             title:    "Louis Glunz Beer Inc.",
             id:       "lgb-cw",
             slug:     "louis-glunz-beer-corporate-website",

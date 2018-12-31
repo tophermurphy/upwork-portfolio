@@ -22,7 +22,7 @@ module.exports = {
 
     plugins: [
         new ImageminPlugin({
-            disable: process.env.NODE_ENV !== 'production'
+            // disable: process.env.NODE_ENV !== 'production'
         }),
 
         new CopyWebpackPlugin([

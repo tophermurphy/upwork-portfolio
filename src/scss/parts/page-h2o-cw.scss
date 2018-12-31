@@ -290,6 +290,7 @@ $section7-height: 80vh;
     z-index: 10;
     top: 30%;
 } 
+
 .section-images-section7 {
     position: absolute;
     top: 0;
@@ -299,6 +300,10 @@ $section7-height: 80vh;
     opacity: .15;
     picture {
         box-shadow: none;
+        &:hover {
+            transform: scale(1);
+            z-index: 0;
+        }
     }
     img {
         height: $section7-height;

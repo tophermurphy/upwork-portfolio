@@ -1,6 +1,4 @@
 {{load this "lagertown"}}
-{{load this "lgb-cw"}}
-{{load this "h2o-cw"}}
 
 {{#> base baseData=lagertown }} 
     <main class="content content-page content-page-{{lagertown.id}}">
@@ -77,10 +75,14 @@
 
         {{> page-section-std dataKey="section3" data=lagertown.content.section3 id=lagertown.id sectionClass="section-text-left"}}
 
-
-
-
     </article>
 
     </main>
+
+{{load this "h2o-cw"}}
+{{load this "h2o-email"}}
+
+{{> work-nav leftNav=h2oCw rightNav=h2oEmail}}
+
+
 {{/ base }}

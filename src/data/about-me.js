@@ -1,5 +1,5 @@
 module.exports = {
-    about: {
+    aboutMe: {
             title:    "About Me",
             id:       "about-me",
             slug:     "about-me",

@@ -1,5 +1,5 @@
 module.exports = {
-    h2oplussite: {
+    h2oCw: {
             title:    "H2O Plus",
             id:       "h2o-cw",
             slug:     "h2o-plus-e-commerce-website",

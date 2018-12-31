@@ -29,9 +29,9 @@ module.exports = {
                 {
                     filename: "lagertown-usa-banner.jpg",
                     alt: "Chicago — Lagertown U.S.A. - Local Craft Lagers",
-                    widths: [ 324, 648, 1130, 2260, 3390],
+                    widths: [ 324, 648, 1132, 2260, 3390],
                     mobileWidth: '90vw',
-                    defaultWidth: '1130px'
+                    defaultWidth: '1132px'
                 }
             ],
         content: {
