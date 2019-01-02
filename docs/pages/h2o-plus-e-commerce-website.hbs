@@ -1,0 +1,177 @@
+{{load this "h2o-cw"}}
+
+{{#> base baseData=h2oCw }} 
+    <main class="content content-page content-page-{{h2oCw.id}}">
+        {{> page-header data=h2oCw dataKey="headImages" id=h2oCw.id }}
+   
+    <article class="page-article {{h2oCw.id}}-article">
+
+        <section class="page-section section-custom section-text-mixed section1">
+            <div class="section-images section-custom-images section-images-section1-0">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section1-0">
+                    {{imagelink h2oCw.content.section1.images.[0]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section1-1">
+                    {{imagelink h2oCw.content.section1.images.[1]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section1-2">
+                    {{imagelink h2oCw.content.section1.images.[2]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section1-copy-0">
+                <h3 class="section-copy-header">{{h2oCw.content.section1.header}}</h3>
+                <p class="section-copy-body">{{h2oCw.content.section1.body.[0]}}</p>
+                <p class="section-copy-body md-show">{{h2oCw.content.section1.body.[1]}}</p>
+            </div>
+
+            <div class="section-images section-custom-images section-images-section1-1">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section1-3">
+                    {{imagelink h2oCw.content.section1.images.[3]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section1-4">
+                    {{imagelink h2oCw.content.section1.images.[4]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section1-copy-1 md-hide">
+                <p class="section-copy-body">{{h2oCw.content.section1.body.[1]}}</p>
+            </div>
+        </section>
+
+        {{> page-section-std dataKey="section2" data=h2oCw.content.section2 id=h2oCw.id sectionClass="section-text-right"}}
+
+<section class="page-section section-custom section-text-mixed section3">
+            <div class="section-images section-custom-images section-images-section3-0">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section3-0">
+                    {{imagelink h2oCw.content.section3.images.[0]}}
+                </picture>
+                <div class="h2o-swatch-wrap">
+                    <div class="h2o-swatch h2o-swatch-1">
+                        <div class="h20-color" style="background-color:#216D98">&nbsp;</div>
+                        <p>#216D98</p>
+                    </div>
+                    <div class="h2o-swatch h2o-swatch-2">
+                        <div class="h20-color" style="background-color:#00ACD6">&nbsp;</div>
+                        <p>#00ACD6</p>
+                    </div>
+                    <div class="h2o-swatch h2o-swatch-3">
+                        <div class="h20-color" style="background-color:#9D9C9D">&nbsp;</div>
+                        <p>#9D9C9D</p>
+                    </div>
+                    <div class="h2o-swatch h2o-swatch-4">
+                        <div class="h20-color" style="background-color:#EAEAEA">&nbsp;</div>
+                        <p>#EAEAEA</p>
+                    </div>
+                </div>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section3-1">
+                    {{imagelink h2oCw.content.section3.images.[1]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section3-copy-0">
+                <h3 class="section-copy-header">{{h2oCw.content.section3.header}}</h3>
+                <p class="section-copy-body">{{h2oCw.content.section3.body.[0]}}</p>
+                <p class="section-copy-body md-show">{{h2oCw.content.section3.body.[1]}}</p>
+            </div>
+
+            <div class="section-images section-custom-images section-images-section3-1">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section3-2">
+                    {{imagelink h2oCw.content.section3.images.[2]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section3-copy-1 md-hide">
+                <p class="section-copy-body">{{h2oCw.content.section3.body.[1]}}</p>
+            </div>
+        </section>
+
+        {{> page-section-std dataKey="section4" data=h2oCw.content.section4 id=h2oCw.id sectionClass="section-text-right"}}
+
+        <section class="page-section section-custom section-text-mixed section5">
+            <div class="section-images section-custom-images section-images-section5-0">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section5-0">
+                    {{imagelink h2oCw.content.section5.images.[0]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section5-1">
+                    {{imagelink h2oCw.content.section5.images.[1]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section5-copy-0">
+                <h3 class="section-copy-header">{{h2oCw.content.section5.header}}</h3>
+                <p class="section-copy-body">{{h2oCw.content.section5.body.[0]}}</p>
+            </div>
+
+            <div class="section-images section-custom-images section-images-section5-1">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section5-2">
+                    {{imagelink h2oCw.content.section5.images.[2]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section5-3">
+                    {{imagelink h2oCw.content.section5.images.[3]}}
+                </picture>
+            </div>
+        </section>
+
+        <section class="page-section section-custom section-text-mixed section6">
+            <div class="section-images section-custom-images section-images-section6-0">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-1">
+                    {{imagelink h2oCw.content.section6.images.[1]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-2">
+                    {{imagelink h2oCw.content.section6.images.[2]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-3">
+                    {{imagelink h2oCw.content.section6.images.[3]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-4">
+                    {{imagelink h2oCw.content.section6.images.[4]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-5">
+                    {{imagelink h2oCw.content.section6.images.[5]}}
+                </picture>
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-6">
+                    {{imagelink h2oCw.content.section6.images.[6]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section6-copy-0">
+                <h3 class="section-copy-header">{{h2oCw.content.section6.header}}</h3>
+                <p class="section-copy-body">{{h2oCw.content.section6.body.[0]}}</p>
+                <p class="section-copy-body md-show">{{h2oCw.content.section6.body.[1]}}</p>
+            </div>
+
+            <div class="section-images section-custom-images section-images-section6-1">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section6-0">
+                    {{imagelink h2oCw.content.section6.images.[0]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section6-copy-1 md-hide">
+                <p class="section-copy-body">{{h2oCw.content.section6.body.[1]}}</p>
+            </div>
+        </section>
+
+        <section class="page-section section-custom section-glunzsite-stats section7">
+            <div class="section-copy section-custom-copy section7-copy-0">
+                <p class="section-copy-body">{{{h2oCw.content.section7.body.[0]}}}</p>
+            </div>
+            <div class="section-images section-custom-images section-images-section7">
+                <picture class="image-wrapper image-{{h2oCw.id}} image-section7-0">
+                    {{imagelink h2oCw.content.section7.images.[0]}}
+                </picture>
+            </div>
+        </section>
+
+
+
+    </article>
+
+    </main>
+
+{{load this "lgb-cw"}} 
+{{load this "lagertown"}}
+
+{{> work-nav leftNav=lgbCw rightNav=lagertown}}
+
+{{/ base }}

@@ -27,8 +27,9 @@ module.exports =  {
 
         new CopyWebpackPlugin([
             {
-            from: path.join(__dirname, '../../', 'src/CNAME'),
-            to: path.join(__dirname, '../../', 'docs')
+            from: path.join(__dirname, '../../', 'src/'),
+            to: path.join(__dirname, '../../', 'docs'),
+            ignore: [ '*.js' ]
             }
         ]) 
     ]

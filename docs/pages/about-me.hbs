@@ -1,0 +1,27 @@
+{{load this "about-me"}}
+
+{{#> base baseData=aboutMe }} 
+    <main class="content content-about-me">
+        <header class="about-header">
+            <h1 class="about-title">ABOUT</h1>
+            <h2 class="about-subtitle">me</h2>
+        </header>
+        <article class="about-article">
+            <blockquote class="about-quote">
+                <h3 class="quote-title"> {{aboutMe.content.quote}} </h3>
+                <h4 class="quote-author"> {{{aboutMe.content.quoteAuthor}}} </h4>
+            </blockquote>
+            <section class="about-body">
+                {{#each aboutMe.content.body}}
+                    <p>{{{this}}}</p>
+                {{/each}}
+
+                <div class="bg-logo">
+                    {{> cm-logo}}
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+{{/ base }}

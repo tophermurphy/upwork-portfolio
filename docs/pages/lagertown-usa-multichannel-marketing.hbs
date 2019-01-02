@@ -1,0 +1,88 @@
+{{load this "lagertown"}}
+
+{{#> base baseData=lagertown }} 
+    <main class="content content-page content-page-{{lagertown.id}}">
+        {{> page-header data=lagertown dataKey="headImages" id=lagertown.id }}
+   
+    <article class="page-article {{lagertown.id}}-article">
+
+        <section class="page-section section-standard section-text-left section1">
+            <div class="section-images section-custom-images section-images-section1-0">
+                <picture class="image-wrapper image-{{lagertown.id}} image-section1-0">
+                    {{imagelink lagertown.content.section1.images.[0]}}
+                </picture>
+                <div class="lagertown-swatch-wrap">
+                    <div class="lagertown-swatch">
+                        <div class="lagertown-swatch-1">
+                        </div>
+                        <p>#4E4D4D</p>
+                    </div>
+                    <div class="lagertown-swatch">
+                        <div class="lagertown-swatch-2">
+                        </div>
+                        <p>#9B3E36</p>
+                    </div>
+                    <div class="lagertown-swatch">
+                        <div class="lagertown-swatch-3">
+                        </div>
+                        <p>#F7ED6C</p>
+                    </div>
+                    <div class="lagertown-swatch">
+                        <div class="lagertown-swatch-4">
+                        </div>
+                        <p>#12A6E0</p>
+                    </div>
+                </div>
+                <picture class="image-wrapper image-{{lagertown.id}} image-section1-3 md-show">
+                    {{imagelink lagertown.content.section1.images.[1]}}
+                </picture>
+            </div>
+
+            <div class="section-copy section-custom-copy section1-copy-0">
+                <h3 class="section-copy-header">{{lagertown.content.section1.header}}</h3>
+                <p class="section-copy-body">{{lagertown.content.section1.body.[0]}}</p>
+                <p class="section-copy-body">{{lagertown.content.section1.body.[1]}}</p>
+            </div>
+        </section>
+
+        <section class="page-section section-custom section-text-mixed section2">
+            <div class="section-images section-custom-images section-images-section2-0">
+                <picture class="image-wrapper image-{{lagertown.id}} image-section2-0">
+                    {{imagelink lagertown.content.section2.images.[0]}}
+                </picture>
+                <picture class="image-wrapper image-{{lagertown.id}} image-section2-1">
+                    {{imagelink lagertown.content.section2.images.[1]}}
+                </picture>
+                
+            </div>
+            <div class="section-copy section-custom-copy section2-copy-0">
+                <h3 class="section-copy-header">{{lagertown.content.section2.header}}</h3>
+                <p class="section-copy-body">{{lagertown.content.section2.body.[0]}}</p>
+                <p class="section-copy-body md-show">{{lagertown.content.section2.body.[1]}}</p>
+            </div>
+            <div class="section-images section-custom-images section-images-section2-1">
+                <picture class="image-wrapper image-{{lagertown.id}} image-section2-2">
+                    {{imagelink lagertown.content.section2.images.[2]}}
+                </picture>
+                <picture class="image-wrapper image-{{lagertown.id}} image-section2-3">
+                    {{imagelink lagertown.content.section2.images.[3]}}
+                </picture>
+            </div>
+            <div class="section-copy section-custom-copy section2-copy-1 md-hide">
+                <p class="section-copy-body section-copy-body-0">{{lagertown.content.section2.body.[1]}}</p>
+            </div>
+        </section>
+
+        {{> page-section-std dataKey="section3" data=lagertown.content.section3 id=lagertown.id sectionClass="section-text-left"}}
+
+    </article>
+
+    </main>
+
+{{load this "h2o-cw"}}
+{{load this "h2o-email"}}
+
+{{> work-nav leftNav=h2oCw rightNav=h2oEmail}}
+
+
+{{/ base }}

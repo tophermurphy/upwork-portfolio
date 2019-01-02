@@ -1,0 +1,25 @@
+{{load this "h2o-email"}}
+
+{{#> base baseData=h2oEmail }} 
+    <main class="content content-page content-page-{{h2oEmail.id}}">
+        {{> page-header data=h2oEmail dataKey="headImages" id=h2oEmail.id }}
+   
+    <article class="page-article {{h2oEmail.id}}-article">
+
+        {{> page-section-std dataKey="section1" data=h2oEmail.content.section1 id=h2oEmail.id sectionClass="section-text-left"}}
+
+        {{> page-section-std dataKey="section2" data=h2oEmail.content.section2 id=h2oEmail.id sectionClass="section-text-right"}}
+        {{> page-section-std dataKey="section3" data=h2oEmail.content.section3 id=h2oEmail.id sectionClass="section-text-left"}}
+        {{> page-section-std dataKey="section4" data=h2oEmail.content.section4 id=h2oEmail.id sectionClass="section-text-right"}}
+
+
+    </article>
+
+    </main>
+
+{{load this "lagertown"}}
+{{load this "lgb-cw"}}
+
+{{> work-nav leftNav=lagertown rightNav=lgbCw}}
+
+{{/ base }}
