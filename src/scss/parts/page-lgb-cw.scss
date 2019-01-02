@@ -22,6 +22,11 @@
 
 // BEGIN IMAGE POSITIONING //
 
+.image-headImages-2 img {
+    transform: translate(-50%,-60%);
+    top: 60%;
+}
+
 .image-section1-0 {
     width: 58%;
     // max-width: 371px;
@@ -417,6 +422,10 @@ $glunz-box: solid #9D9C9D;
 
 
     @media (min-width: $lg-width){
+
+        .image-headImages-2 img {
+            max-width: 100%;
+        }
 
         .image-section1-0 {
             width: 62%;

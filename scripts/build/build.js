@@ -66,7 +66,7 @@ function time () {
 
 function callback (err, stats) {
     const strOpt = {colors: true, assets: false, chunks: false, entrypoints: false, children: false};
-
+    
     if (err) {
         throw err;
     }

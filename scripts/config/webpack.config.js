@@ -5,6 +5,7 @@ const scss = require('./scss.config');
 const resources = require('./resources.config');
 
 module.exports = {
+    mode: 'development',
     output: {
         filename: '[name]',
         path: path.join(__dirname, "../../", paths.dist)
@@ -13,5 +14,6 @@ module.exports = {
     resources: resources,
     pages: pages,
     scss: scss,
+
 
 };

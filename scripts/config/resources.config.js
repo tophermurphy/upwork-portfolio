@@ -2,7 +2,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+module.exports =  {
     entry: {
         'main.js': path.join(__dirname, '../../', 'src/main.js')
     },
@@ -22,7 +22,7 @@ module.exports = {
 
     plugins: [
         new ImageminPlugin({
-            // disable: process.env.NODE_ENV !== 'production'
+            disable: process.argv.indexOf("--watch") >= 2
         }),
 
         new CopyWebpackPlugin([

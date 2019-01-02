@@ -47,8 +47,6 @@
 
 .lagertown-swatch {
     width: 20%;
-    // padding-bottom:20%;
-    // background-color: blue;
     div {
         width: 100%;
         padding-top: 100%;
@@ -115,6 +113,9 @@ div.lagertown-swatch-4{
 
 .image-section2-0 {
     width: 65%;
+    overflow: hidden;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
 }
 
 .image-section2-1 {
