@@ -1,6 +1,6 @@
 ---
 import '../styles/styles.scss';
-import Fonts from '../components/Fonts.astro';
+
 interface Props {
 	title?: string;
 	classes?: Array<string>
@@ -21,7 +21,6 @@ const pageTitle = title || 'Chris Murphy | Web Development & Design'
     <meta name="msapplication-TileColor" content="#df4d25" />
     <meta name="theme-color" content="#df4d25" />
 	<link rel="stylesheet" href="https://use.typekit.net/qzn6qfi.css">
-	<Fonts />
     <title>{pageTitle}</title>
   </head>
   <body class:list={['body - ', classes]}>

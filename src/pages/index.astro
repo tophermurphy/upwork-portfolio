@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import ThumbHome from "../components/ThumbHome.astro"
+import h2oCw from "../data/h2o-cw"
 ---
 <Layout classes={['home']}>
 <header class="home-header">
@@ -22,6 +24,8 @@ import Layout from "../layouts/Layout.astro"
   </div>
 </header>
 <main id="work">
-  <section class="project-thumbs-range"></section>
+  <section class="project-thumbs-range">
+    <ThumbHome data={h2oCw} />
+  </section>
 </main>
 </Layout>
