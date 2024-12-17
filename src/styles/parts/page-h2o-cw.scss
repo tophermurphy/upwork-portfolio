@@ -1,3 +1,5 @@
+@use "variables.scss" as vars;
+
 ///////////Begin Page Class Wrap//////////
 .page-h2o-cw {
 
@@ -18,7 +20,7 @@
 }
 
 .section3 {
-    grid-template-rows: 1fr 1fr 1fr #{$margin-bottom-std * 2} 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr #{ vars.$margin-bottom-std * 2} 1fr 1fr 1fr;
 }
 
 .image-headImages-1 img {
@@ -36,7 +38,7 @@
 }
 
 .section-images-section1-1 {
-    background: $base-white;
+    background:  vars.$base-white;
 }
 
 .image-section1-0 {
@@ -71,12 +73,12 @@
      border-top-left-radius: .9%;
      border-top-right-radius: .9%;
      overflow: hidden;
-     background: $base-white;
+     background:  vars.$base-white;
  }
 
  .section2 .section-copy, 
  .section4 .section-copy {
-     padding-top: $margin-bottom-std * 2;
+     padding-top:  vars.$margin-bottom-std * 2;
      position: absolute;
      z-index: 100;
      background: rgba(255, 255, 255, 0.85);
@@ -99,12 +101,12 @@
  }
 
  .section3 {
-     background: $base-white;
-     padding-top: $margin-bottom-std * 4;
+     background:  vars.$base-white;
+     padding-top:  vars.$margin-bottom-std * 4;
  }
 
 .section-images-section3-0 {
-    background: $base-white;
+    background:  vars.$base-white;
     margin: 0 5%;
     width: 90%;
     padding: 0 5%;
@@ -116,18 +118,18 @@
     picture {
         box-shadow: none;
     }
-    grid-column: $grid-images-right-edge;
+    grid-column: vars.$grid-images-right-edge;
     grid-row: 1 / 4;
 }
 
 .section-images-section3-1 {
-    grid-column: $grid-images-right-edge;
+    grid-column: vars.$grid-images-right-edge;
     grid-row: 5 / 8;
 }
 
 .image-section3-0 {
     width: 50%;
-    margin-bottom: $margin-bottom-std;
+    margin-bottom:  vars.$margin-bottom-std;
 }
 
 .h2o-swatch-wrap {
@@ -140,7 +142,7 @@
 
 .h2o-swatch {
     width: 49%;
-    margin-bottom: $margin-bottom-std;
+    margin-bottom:  vars.$margin-bottom-std;
     .h20-color {
         width: 80%;
         height: 70%;
@@ -155,8 +157,8 @@
 
 .section3-copy-0 {
     margin-top: 0;
-    padding-top: $margin-bottom-std * 2;
-    grid-column: $grid-text-left;
+    padding-top:  vars.$margin-bottom-std * 2;
+    grid-column:  vars.$grid-text-left;
     grid-row: 2 / 7;
 }
 
@@ -191,7 +193,7 @@
 
 .section-images-section5-0,
 .section-images-section5-1 {
-    grid-column: $grid-images-right-edge;
+    grid-column:   vars.$grid-images-right-edge;
 }
 
 .section-images-section5-0 {
@@ -206,7 +208,7 @@
 
 .section5-copy-0 {
     position: relative;
-    grid-column: $grid-text-left;
+    grid-column:  vars.$grid-text-left;
     grid-row: 3 / 7;
     z-index: -10;
     &::after {
@@ -216,7 +218,7 @@
         width: 110%;
         height: 50%;
         top: 100%;
-        background: $base-white;
+        background:  vars.$base-white;
         z-index: -100;
         left: -5%;
     }
@@ -237,7 +239,7 @@
 }
 
 .section6 {
-    background-color: $base-white;
+    background-color:  vars.$base-white;
 }
 
 .image-section6-0 {
@@ -281,14 +283,14 @@
     background-color: rgba(255, 255, 255, 0.85);
     position: relative;
     z-index: 100;
-    padding-top: $margin-bottom-std * 2;
+    padding-top:  vars.$margin-bottom-std * 2;
 }
 
 $section7-height: 80vh;
 
 .section7 {
     height: $section7-height;
-    background-color: $base-white;
+    background-color:  vars.$base-white;
     position: relative;
 }
 
@@ -322,7 +324,7 @@ $section7-height: 80vh;
 
 ////////////Begin Media Queries/////////////////////
 @supports (display: grid){
-    @media (min-width: $md-width){
+    @media (min-width:  vars.$md-width){
 
         .section-images {
             height: 100%;
@@ -331,25 +333,25 @@ $section7-height: 80vh;
         .section1::before {
             content: "";
             display: block;
-            background-color: $base-white;
+            background-color:  vars.$base-white;
             z-index: -100;
             grid-column: lMrg / last;
             grid-row: 2 / span 4;
         }
 
         .section-images-section1-0 {
-            grid-column: $grid-images-right-edge;
+            grid-column:   vars.$grid-images-right-edge;
             grid-row: 1 / 4;
         }
 
         .section-images-section1-1 {
-            grid-column: $grid-images-right-edge;
+            grid-column:   vars.$grid-images-right-edge;
             grid-row: 4 / 7;
             background: none;
         }
 
         .section1-copy-0 {
-            grid-column: $grid-text-left;
+            grid-column:  vars.$grid-text-left;
             grid-row: 3 / span 2; 
         }
 
@@ -404,19 +406,19 @@ $section7-height: 80vh;
         }
 
         .section3 {
-            padding: 0 0 #{$margin-bottom-std * 4} 0;
+            padding: 0 0 #{ vars.$margin-bottom-std * 4} 0;
         }
 
         .section-images-section3-0 {
-            margin-top: $margin-bottom-std * 4;
-            margin-bottom: $margin-bottom-std * 2;
-            padding-bottom: $margin-bottom-std * 2;
+            margin-top:  vars.$margin-bottom-std * 4;
+            margin-bottom:  vars.$margin-bottom-std * 2;
+            padding-bottom:  vars.$margin-bottom-std * 2;
         }
 
         .section5::after {
             content: '';
             display: block;
-            background: $base-white;
+            background:  vars.$base-white;
             grid-column: lMrg / last;
             grid-row: 2 / 8;
             z-index: -100;
@@ -458,13 +460,13 @@ $section7-height: 80vh;
         }
 
         .section6 {
-            grid-template-rows: 1fr auto #{$margin-bottom-std * 2} auto 1fr;
-            padding: #{$margin-bottom-std * 2} 0;
+            grid-template-rows: 1fr auto #{ vars.$margin-bottom-std * 2} auto 1fr;
+            padding: #{ vars.$margin-bottom-std * 2} 0;
         }
 
         .section-images-section6-0,
         .section-images-section6-1 {
-            grid-column: $grid-images-left-edge;
+            grid-column:  vars.$grid-images-left-edge;
         }
 
         .section-images-section6-0 {
@@ -488,7 +490,7 @@ $section7-height: 80vh;
         }    
 
         .section6-copy-0 {
-            grid-column: $grid-text-right;
+            grid-column:  vars.$grid-text-right;
             grid-row: 2 / 5;
             margin:0;
             padding: 0;
@@ -547,34 +549,34 @@ $section7-height: 80vh;
 
     }
 
-    @media (min-width: $lg-width){
+    @media (min-width:  vars.$lg-width){
         .section-images-section1-0 {
-            grid-column: $grid-images-right;
+            grid-column:  vars.$grid-images-right;
             grid-row: 1 / 4;
         }
 
         .section-images-section1-1 {
-            grid-column: $grid-images-right;
+            grid-column:  vars.$grid-images-right;
             grid-row: 4 / 7;
             background: none;
         }
 
         .section-images-section3-0 {
-            grid-column: $grid-images-right;
+            grid-column:  vars.$grid-images-right;
         }
 
         .section-images-section3-1 {
-            grid-column: $grid-images-right;
+            grid-column:  vars.$grid-images-right;
         }
 
         .section-images-section5-0,
         .section-images-section5-1 {
-        grid-column: $grid-images-right;
+        grid-column:  vars.$grid-images-right;
     }
 
         .section-images-section6-0,
         .section-images-section6-1 {
-            grid-column: $grid-images-left;
+            grid-column: vars.$grid-images-left;
         }
 
     }

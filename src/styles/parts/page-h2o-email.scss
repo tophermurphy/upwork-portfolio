@@ -1,0 +1,42 @@
+@use "variables.scss" as vars;
+
+.page-h2o-email {
+  .image-headImages-1 {
+    img {
+      top: 10%;
+      transform: translate(-50%, -10%);
+    }
+  }
+
+  @media (min-width: vars.$md-width) {
+    .image-headImages-0 {
+      width: 36%;
+    }
+
+    .image-headImages-1 {
+      width: 30%;
+    }
+
+    .image-headImages-2 {
+      width: 30%;
+    }
+
+    .h2o-email-article section + section {
+      margin-top: -(vars.$margin-bottom-std * 9.5);
+    }
+
+    .section-images {
+      .image-h2o-email {
+        width: 80%;
+      }
+    }
+
+    .section-text-left .image-h2o-email {
+      margin-left: 20%;
+    }
+
+    .section-text-right .image-h2o-email {
+      margin-right: 20%;
+    }
+  }
+}

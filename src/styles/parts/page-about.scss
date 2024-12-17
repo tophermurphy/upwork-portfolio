@@ -1,0 +1,120 @@
+@use "sass:math";
+@use "variables.scss" as vars;
+
+.about-me {
+  .about-header {
+    position: relative;
+    padding-bottom: math.div(vars.$margin-bottom-std, 2);
+    margin-bottom: vars.$margin-bottom-std * 2;
+  }
+
+  .about-title {
+    font-size: 96vw;
+    width: 110%;
+    margin-left: -5%;
+    letter-spacing: 0;
+    background-clip: text;
+    background-image: url(../images/chris-murphy-portrait.png);
+    color: transparent;
+    background-size: cover;
+    line-height: 80%;
+    transition: 0s;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    font-size: 6vw;
+    display: inline-block;
+    background: vars.$base-white;
+    border-radius: 1em 1em 1em 1em;
+    padding: 0.4em 0.4em 0.6em;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+  }
+
+  .quote-title {
+    text-transform: uppercase;
+    margin-bottom: 0.125em;
+  }
+
+  .quote-author {
+    font-size: 2.3em;
+  }
+
+  blockquote {
+    margin-bottom: vars.$margin-bottom-std * 2;
+  }
+
+  .about-link {
+    color: vars.$base-lighter;
+  }
+
+  .about-article {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .bg-logo {
+    width: 150%;
+    left: -25%;
+    position: absolute;
+    top: -24px;
+    z-index: -10;
+    #cm-logo path {
+      fill: vars.$base-white;
+    }
+  }
+
+  .about-article {
+    font-size: 1em;
+    margin-bottom: vars.$margin-bottom-std * 4;
+    p {
+      margin-bottom: vars.$margin-bottom-std * 2;
+      line-height: 1.8;
+    }
+  }
+
+  .about-quote {
+    text-align: center;
+  }
+
+  .about-body {
+    max-width: 80%;
+    width: 45em;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: vars.$md-width) {
+    .about-article {
+      font-size: 1.176em;
+    }
+
+    blockquote {
+      margin-bottom: vars.$margin-bottom-std * 4;
+    }
+  }
+
+  @media (min-width: vars.$lg-width) {
+    .about-header {
+      width: 998px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-title {
+      font-size: 938px;
+    }
+
+    .about-subtitle {
+      font-size: 60px;
+    }
+  }
+
+  @media (min-width: vars.$xl-width) {
+    .about-article {
+      font-size: 1.5em;
+    }
+  }
+}
