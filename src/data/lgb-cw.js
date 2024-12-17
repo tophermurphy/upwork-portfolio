@@ -7,7 +7,7 @@ export const lgbCw = {
   description:
     "Making a historic company relevant with updated branding and providing a sales tool unequalled in the market",
   thumbnail: {
-    filename: "louis-glunz-website-thumbnail.jpg",
+    filename: "glunz/thumbnail/louis-glunz-website-thumbnail.jpg",
   },
   roles: [
     "Visual Design",

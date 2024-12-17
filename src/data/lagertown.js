@@ -7,7 +7,7 @@ export const lagertown = {
   description:
     "An attractive design to sell to businesses then later be used to sell through to customers",
   thumbnail: {
-    filename: "lagertown-thumbnail.jpg",
+    filename: "lagertown/thumbnail/lagertown-thumbnail.jpg",
   },
   roles: ["Visual Design", "Creative Direction"],
   tools: ["Illustrator", "Photoshop"],

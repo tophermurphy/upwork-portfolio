@@ -1,4 +1,5 @@
 ---
+import DynaImage from './DynaImage.astro';
 interface Props {
     data: {
         id: string;
@@ -11,14 +12,17 @@ interface Props {
     }
 }
 const { data } = Astro.props
+const imageProps = {
+    filename: data.thumbnail.filename,
+    alt: ''
+}
 ---
 
 <figure class:list={['project-thumb', `project-thumb-${data.id}`]} class="project-thumb project-thumb-{{data.id}}">
-    <a href={`${data.slug}}.html`}>
-      <!-- <picture class="project-thumb-img">
-              
-          {{imagelink data.thumbnail}}
-      </picture> -->
+    <a href={`${data.slug}.html`}>
+      <picture class="project-thumb-img">
+            <DynaImage data={imageProps} />
+      </picture>
       <figcaption class="thumb-caption">
         <h3 class="thumb-title">{data.title}</h3>
         <h4 class="thumb-subtitle">{data.subtitle}</h4>

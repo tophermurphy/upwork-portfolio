@@ -7,7 +7,7 @@ export const h2oEmail = {
   description:
     "Creating powerful visuals with dynamic typography to general excitement, clicks and sales",
   thumbnail: {
-    filename: "h2o-email-thumbnail.jpg",
+    filename: "h2o-email/thumbnail/h2o-email-thumbnail.jpg",
   },
   roles: ["Visual Design", "Photography", "Front-End Development"],
   tools: ["Photoshop", "HTML/CSS"],

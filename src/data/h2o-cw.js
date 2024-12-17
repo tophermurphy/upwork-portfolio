@@ -7,7 +7,7 @@ export const h2oCw = {
   description:
     "Continuously evolving a brand to stay relevant and raising the quality to compete with prestige brands",
   thumbnail: {
-    filename: "h2o-plus-website-thumbnail.jpg",
+    filename: "h2o-web/thumbnail/h2o-plus-website-thumbnail.jpg",
   },
   roles: ["Visual Design", "Front-End Development", "Photography"],
   tools: ["Photoshop", "Html/Css", "Javascript/jQuery"],
