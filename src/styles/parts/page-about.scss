@@ -14,14 +14,21 @@
     margin-left: -5%;
     letter-spacing: 0;
     background-clip: text;
+<<<<<<< HEAD
     background-image: url(../images/about-me/chris-murphy-portrait.png);
+=======
+    background-image: url(../images/chris-murphy-portrait.png);
+>>>>>>> 312e2f3 (set up)
     color: transparent;
     background-size: cover;
     line-height: 80%;
     transition: 0s;
     text-align: center;
+<<<<<<< HEAD
     -webkit-text-stroke: 1.5px rgba(0, 0, 0, .125);
     text-stroke: 1.5px rgba(0, 0, 0, .125);
+=======
+>>>>>>> 312e2f3 (set up)
   }
 
   .about-subtitle {
@@ -33,7 +40,10 @@
     position: absolute;
     bottom: 0;
     right: 10%;
+<<<<<<< HEAD
     box-shadow: vars.$shadows-sm;
+=======
+>>>>>>> 312e2f3 (set up)
   }
 
   .quote-title {

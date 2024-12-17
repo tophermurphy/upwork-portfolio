@@ -286,9 +286,15 @@ body.about-me {
 .page-info p {
     font-size: 1.65em;
     line-height: 1.4;
+<<<<<<< HEAD
     // div {
     //     margin-bottom: vars.$margin-bottom-std * .25;
     // }
+=======
+    div {
+        margin-bottom: vars.$margin-bottom-std * .25;
+    }
+>>>>>>> 312e2f3 (set up)
 }
 
 .section-copy, .header-images, .page-description, .page-info {
