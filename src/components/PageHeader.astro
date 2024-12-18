@@ -1,0 +1,79 @@
+---
+import DynaImage from "./DynaImage.astro";
+interface Props {
+  data: {
+    id: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    roles?: string[];
+    tools?: string[];
+    platforms?: string[];
+    headImages?: {
+      filename: string;
+      alt?: string;
+      widths?: number[];
+      mobileWidth?: string;
+      defaultWidth?: string;
+    }[];
+  };
+}
+const { data } = Astro.props;
+---
+
+<header class:list={["page-header", `${data.id}-header`]}>
+  <div class="header-images">
+    {
+      data.headImages &&
+        data.headImages.length &&
+        data.headImages.map((image, i) => (
+          <picture
+            class:list={[
+              "image-wrapper",
+              `image-${data.id}}`,
+              `image-${data.id}-${i}`,
+            ]}
+          >
+            <DynaImage data={image} />
+          </picture>
+        ))
+    }
+  </div>
+  <div class="page-title">
+    <h1>{data.title}</h1>
+    <h2>{data.subtitle}</h2>
+  </div>
+  <blockquote class="page-description">
+    {data.description}
+  </blockquote>
+  {
+    data.roles && data.roles.length && (
+      <div class="page-info page-roles">
+        <p>
+          <strong>Roles: </strong>
+          {data.roles.map((item) => item)}
+        </p>
+      </div>
+    )
+  }
+  {
+    data.tools && data.tools.length && (
+      <div class="page-info page-tools">
+        <p>
+          <strong>Tools: </strong>
+          {data.tools.map((item) => item)}
+        </p>
+      </div>
+    )
+  }
+  {
+    data.platforms && data.platforms.length && (
+      <div class="page-info page-platforms">
+        <p>
+          <strong>Platforms: </strong>
+          {data.platforms.map((item) => item)}
+        </p>
+      </div>
+    )
+  }
+</header>

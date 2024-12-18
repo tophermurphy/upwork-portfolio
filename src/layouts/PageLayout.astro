@@ -1,6 +1,7 @@
 ---
 import "../styles/styles.scss";
 import Head from "src/components/Head.astro";
+import PageNav from "src/components/PageNav.astro";
 import Footer from "src/components/Footer.astro";
 
 interface Props {
@@ -17,6 +18,7 @@ const { title, classes, description } = Astro.props;
     <Head title={title} description={description} />
   </head>
   <body class:list={["body", classes]}>
+    <PageNav />
     <slot />
     <Footer />
   </body>
