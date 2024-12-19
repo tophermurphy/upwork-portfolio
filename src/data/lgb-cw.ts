@@ -10,6 +10,9 @@ export const lgbCw: PageType = {
     "Making a historic company relevant with updated branding and providing a sales tool unequalled in the market",
   thumbnail: {
     filename: "glunz/thumbnail/louis-glunz-website-thumbnail.jpg",
+    widths: [528, 960, 1056, 1141],
+    defaultWidth: '528px',
+    mobileWidth: '320px'
   },
   roles: [
     "Visual Design",

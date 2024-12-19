@@ -10,6 +10,9 @@ export const lagertown: PageType = {
     "An attractive design to sell to businesses then later be used to sell through to customers",
   thumbnail: {
     filename: "lagertown/thumbnail/lagertown-thumbnail.jpg",
+    widths: [528, 960, 1056, 1141],
+    defaultWidth: '528px',
+    mobileWidth: '320px'
   },
   roles: ["Visual Design", "Creative Direction"],
   tools: ["Illustrator", "Photoshop"],

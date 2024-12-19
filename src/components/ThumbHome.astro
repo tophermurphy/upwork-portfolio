@@ -5,16 +5,13 @@ interface Props {
     data: PageData;
 }
 const { data } = Astro.props
-const imageProps = {
-    filename: data.thumbnail.filename,
-    alt: ''
-}
+
 ---
 
-<figure class:list={['project-thumb', `project-thumb-${data.id}`]} class="project-thumb project-thumb-{{data.id}}">
-    <a href={`${data.slug}.html`}>
+<figure class:list={['project-thumb', `project-thumb-${data.id}`]} >
+    <a href={`/${data.slug}`}>
       <picture class="project-thumb-img">
-            <DynaImage data={imageProps} />
+            <DynaImage data={data.thumbnail} />
       </picture>
       <figcaption class="thumb-caption">
         <h3 class="thumb-title">{data.title}</h3>

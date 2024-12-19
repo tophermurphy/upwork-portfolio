@@ -10,6 +10,10 @@ export const h2oCw: PageType = {
     "Continuously evolving a brand to stay relevant and raising the quality to compete with prestige brands",
   thumbnail: {
     filename: "h2o-web/thumbnail/h2o-plus-website-thumbnail.jpg",
+    alt: "",
+    widths: [528, 960, 1056, 1141],
+    defaultWidth: '528px',
+    mobileWidth: '320px'
   },
   roles: ["Visual Design", "Front-End Development", "Photography"],
   tools: ["Photoshop", "Html", "CSS", "JavaScript", "jQuery"],

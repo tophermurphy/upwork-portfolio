@@ -9,6 +9,9 @@ export const h2oEmail: PageType = {
     "Creating powerful visuals with dynamic typography to general excitement, clicks and sales",
   thumbnail: {
     filename: "h2o-email/thumbnail/h2o-email-thumbnail.jpg",
+    widths: [528, 960, 1056, 1141],
+    defaultWidth: '528px',
+    mobileWidth: '320px'
   },
   roles: ["Visual Design", "Photography", "Front-End Development"],
   tools: ["Photoshop", "HTML/CSS"],
