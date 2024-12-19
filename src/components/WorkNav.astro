@@ -11,7 +11,7 @@ const { leftNav, rightNav } = Astro.props;
 <nav class="work-nav-container">
 
     <div class="work-nav work-nav-left">
-        <a class="work-nav-link work-nav-link-left" href={`${leftNav.slug}.html`}>
+        <a class="work-nav-link work-nav-link-left" href={`/${leftNav.slug}`}>
         <figure class="work-nav-figure work-nav-figure-left ">
             <DynaImage data={leftNav.thumbnail} />
             <figcaption class="work-nav-caption work-nav-caption-left">
@@ -23,7 +23,7 @@ const { leftNav, rightNav } = Astro.props;
     </div>
 
     <div class="work-nav work-nav-right">
-        <a class="work-nav-link work-nav-link-right"  href={`${rightNav.slug}.html`}>
+        <a class="work-nav-link work-nav-link-right"  href={`/${rightNav.slug}`}>
         <figure class="work-nav-figure work-nav-figure-right">
             <DynaImage data={rightNav.thumbnail} />
             <figcaption class="work-nav-caption work-nav-caption-right">
