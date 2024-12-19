@@ -1,0 +1,34 @@
+---
+import data from "src/data/about-me"
+import Layout from "src/layouts/PageLayout.astro"
+import CmLogo from "src/components/svgs/CmLogo.svg"
+---
+
+<Layout title={data.title} classes={["page", data.id, `page-${data.id}`]}>
+
+    <main class="content content-about-me">
+        <header class="about-header">
+            <h1 class="about-title">about</h1>
+            <h2 class="about-subtitle">me</h2>
+        </header>
+        <article class="about-article">
+            <blockquote class="about-quote">
+                <h3 class="quote-title"> {data.content.quote}</h3>
+                <h4 class="quote-author">{data.content.quoteAuthor}</h4>
+            </blockquote>
+            <section class="about-body">
+                { data.content.body &&
+                    data.content.body.map(item => (
+                        <p>{item}</p>
+                    ))
+                }
+
+                <div class="bg-logo">
+                   <CmLogo />
+                </div>
+            </section>
+ 
+        </article>
+
+    </main>
+</Layout>

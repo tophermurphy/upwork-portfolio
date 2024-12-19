@@ -17,7 +17,7 @@ export const aboutMe = {
     ],
     images: [
       {
-        filename: "chris-murphy-portrait.png",
+        filename: "about-me/chris-murphy-portrait.png",
         alt: "A portrait of Chris Murphy, sipping a favorite stout at a local establishment.",
       },
     ],

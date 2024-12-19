@@ -7,9 +7,10 @@ import PageSectionStd from "src/components/PageSectionStd.astro";
 import WorkNav from "src/components/WorkNav.astro";
 import h2oCw from "src/data/h2o-cw";
 import h2oEmail from "src/data/h2o-email";
+import { date } from "astro:schema";
 ---
+<Layout title={data.title} description={data.description} classes={["page", data.id, `page-${data.id}`]} >
 
-<Layout title={data.title} classes={["page", data.id, `page-${data.id}`]} />
 <main class:list={["content", "content-page", `content-page-${data.id}`]}>
   <PageHeader data={data} />
 
@@ -138,3 +139,4 @@ import h2oEmail from "src/data/h2o-email";
 </main>
 
 <WorkNav leftNav={h2oCw} rightNav={h2oEmail} />
+</Layout>
