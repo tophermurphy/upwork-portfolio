@@ -20,6 +20,8 @@
     line-height: 80%;
     transition: 0s;
     text-align: center;
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, .125);
+    text-stroke: 1.5px rgba(0, 0, 0, .125);
   }
 
   .about-subtitle {

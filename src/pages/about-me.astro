@@ -13,13 +13,13 @@ import CmLogo from "src/components/svgs/CmLogo.svg"
         </header>
         <article class="about-article">
             <blockquote class="about-quote">
-                <h3 class="quote-title"> {data.content.quote}</h3>
-                <h4 class="quote-author">{data.content.quoteAuthor}</h4>
+                <h3 class="quote-title" set:html={data.content.quote} /> 
+                <h4 class="quote-author" set:html={data.content.quoteAuthor} />
             </blockquote>
             <section class="about-body">
                 { data.content.body &&
                     data.content.body.map(item => (
-                        <p>{item}</p>
+                        <p set:html={item} />
                     ))
                 }
 

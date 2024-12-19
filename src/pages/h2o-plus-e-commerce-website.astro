@@ -401,8 +401,7 @@ import lgbCw from "src/data/lgb-cw";
         class="page-section section-custom section-glunzsite-stats section7"
       >
         <div class="section-copy section-custom-copy section7-copy-0">
-          <p class="section-copy-body">
-            {data.content.section7.body?.[0] ?? ""}
+          <p class="section-copy-body" set:html={data.content.section7.body?.[0] ?? ""}>
           </p>
         </div>
         <div

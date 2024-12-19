@@ -36,13 +36,11 @@ const { data, dataKey, sectionClass, id } = Astro.props;
     (data.header || data.body)
       && (
         <div class="section-copy">
-          {data.header && <h3 class="section-copy-header">{data.header}</h3>}
+          {data.header && <h3 class="section-copy-header" set:html={data.header} />}
           {data.body &&
             data.body.length &&
             data.body.map((item, i) => (
-              <p class:list={["section-copy-body", `section-copy-body-${i}`]}>
-                {item}
-              </p>
+              <p class:list={["section-copy-body", `section-copy-body-${i}`]} set:html={item} />
             ))}
         </div>
       )
