@@ -346,6 +346,7 @@ body.about-me {
 }
 
 .work-nav-title {
+    font-size: 3.8em;
     @extend %body-header;
 }
 
@@ -355,6 +356,7 @@ body.about-me {
 
 .work-nav-title,
 .work-nav-subtitle {
+    color: vars.$base-white;
     text-align: center;
     margin-bottom: 0;
 }
