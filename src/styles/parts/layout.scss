@@ -283,12 +283,12 @@ body.about-me {
     margin-bottom: vars.$margin-bottom-std;
 }
 
-.page-info {
-    font-size: 1.5em;
+.page-info p {
+    font-size: 1.65em;
     line-height: 1.4;
-    div {
-        margin-bottom: vars.$margin-bottom-std * .25;
-    }
+    // div {
+    //     margin-bottom: vars.$margin-bottom-std * .25;
+    // }
 }
 
 .section-copy, .header-images, .page-description, .page-info {
@@ -543,7 +543,7 @@ body.about-me {
     }
 
     .page-description {
-        font-size: 2.9em;
+        font-size: 2.75em;
     }
 
     h3 {

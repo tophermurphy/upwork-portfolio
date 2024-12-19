@@ -10,7 +10,7 @@ export const h2oCw = {
     filename: "h2o-web/thumbnail/h2o-plus-website-thumbnail.jpg",
   },
   roles: ["Visual Design", "Front-End Development", "Photography"],
-  tools: ["Photoshop", "Html/Css", "Javascript/jQuery"],
+  tools: ["Photoshop", "Html", "CSS", "JavaScript", "jQuery"],
   platforms: ["MarketLive"],
   headImages: [
     {

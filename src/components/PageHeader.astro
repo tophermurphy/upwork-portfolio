@@ -1,4 +1,5 @@
 ---
+import type { ImageType } from "src/types/template";
 import DynaImage from "./DynaImage.astro";
 interface Props {
   data: {
@@ -9,13 +10,7 @@ interface Props {
     roles?: string[];
     tools?: string[];
     platforms?: string[];
-    headImages?: {
-      filename: string;
-      alt?: string;
-      widths?: number[];
-      mobileWidth?: string;
-      defaultWidth?: string;
-    }[];
+    headImages?: ImageType[];
   };
 }
 const { data } = Astro.props;
@@ -30,8 +25,8 @@ const { data } = Astro.props;
           <picture
             class:list={[
               "image-wrapper",
-              `image-${data.id}}`,
-              `image-${data.id}-${i}`,
+              `image-${data.id}`,
+              `image-headImages-${i}`,
             ]}
           >
             <DynaImage data={image} />
@@ -51,7 +46,7 @@ const { data } = Astro.props;
       <div class="page-info page-roles">
         <p>
           <strong>Roles: </strong>
-          {data.roles.map((item) => item)}
+          {data.roles.join(', ')}
         </p>
       </div>
     )
@@ -61,7 +56,7 @@ const { data } = Astro.props;
       <div class="page-info page-tools">
         <p>
           <strong>Tools: </strong>
-          {data.tools.map((item) => item)}
+          {data.tools.join(', ')}
         </p>
       </div>
     )
@@ -71,7 +66,7 @@ const { data } = Astro.props;
       <div class="page-info page-platforms">
         <p>
           <strong>Platforms: </strong>
-          {data.platforms.map((item) => item)}
+          {data.platforms.join(', ')}
         </p>
       </div>
     )

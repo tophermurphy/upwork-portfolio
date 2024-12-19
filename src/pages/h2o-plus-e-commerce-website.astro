@@ -3,12 +3,13 @@ import data from "src/data/h2o-cw";
 import Layout from "src/layouts/PageLayout.astro";
 import DynaImage from "src/components/DynaImage.astro";
 import PageHeader from "src/components/PageHeader.astro";
+import PageSectionStd from "src/components/PageSectionStd.astro";
 ---
 
 <Layout title={data.title} classes={["page", data.id, `page-${data.id}`]}>
   <main class:list={["content", "content-page", `content-page-${data.id}`]}>
     <article class:list={["page-article", `${data.id}-article`]}>
-        <PageHeader data={data} />
+      <PageHeader data={data} />
 
       <section class="page-section section-custom section-text-mixed section1">
         <div
@@ -79,6 +80,161 @@ import PageHeader from "src/components/PageHeader.astro";
         </div>
       </section>
 
+      <PageSectionStd data={data.content.section2} dataKey="section2" id={data.id} sectionClass="section-text-right" />
+
+      <section class="page-section section-custom section-text-mixed section3">
+        <div
+          class="section-images section-custom-images section-images-section3-0"
+        >
+          <picture
+            class:list={[
+              "image-wrapper",
+              `image-${data.id}`,
+              "image-section3-0",
+            ]}
+          >
+            <DynaImage data={data.content.section3.images[0]} />
+          </picture>
+          <div class="h2o-swatch-wrap">
+            <div class="h2o-swatch h2o-swatch-1">
+              <div class="h20-color" style="background-color:#216D98">
+                &nbsp;
+              </div>
+              <p>#216D98</p>
+            </div>
+            <div class="h2o-swatch h2o-swatch-2">
+              <div class="h20-color" style="background-color:#00ACD6">
+                &nbsp;
+              </div>
+              <p>#00ACD6</p>
+            </div>
+            <div class="h2o-swatch h2o-swatch-3">
+              <div class="h20-color" style="background-color:#9D9C9D">
+                &nbsp;
+              </div>
+              <p>#9D9C9D</p>
+            </div>
+            <div class="h2o-swatch h2o-swatch-4">
+              <div class="h20-color" style="background-color:#EAEAEA">
+                &nbsp;
+              </div>
+              <p>#EAEAEA</p>
+            </div>
+          </div>
+          <picture
+            class:list={[
+              "image-wrapper",
+              `image-${data.id}`,
+              "image-section3-1",
+            ]}
+          >
+            <DynaImage data={data.content.section3.images[1]} />
+          </picture>
+        </div>
+
+        <div class="section-copy section-custom-copy section3-copy-0">
+          <h3 class="section-copy-header">{data.content.section3.header}</h3>
+          <p class="section-copy-body">{data.content.section3.body[0]}</p>
+          <p class="section-copy-body md-show">
+            {data.content.section3.body[1]}
+          </p>
+        </div>
+
+        <div
+          class="section-images section-custom-images section-images-section3-1"
+        >
+          <picture
+            class:list={[
+              "image-wrapper",
+              `image-${data.id}`,
+              "image-section3-2",
+            ]}
+          >
+            <DynaImage data={data.content.section3.images[2]} />
+          </picture>
+        </div>
+
+        <div class="section-copy section-custom-copy section3-copy-1 md-hide">
+          <p class="section-copy-body">{data.content.section3.body[1]}</p>
+        </div>
+      </section>
+
+      <PageSectionStd data={data.content.section4} dataKey="section4" id={data.id} sectionClass="section-text-right" />
+      <section class="page-section section-custom section-text-mixed section5">
+        <div class="section-images section-custom-images section-images-section5-0">
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section5-0"]}>
+                <DynaImage data={data.content.section5.images[0]} />
+            </picture>
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section5-1"]}>
+                <DynaImage data={data.content.section5.images[1]} />
+            </picture>
+        </div>
+
+        <div class="section-copy section-custom-copy section5-copy-0">
+            <h3 class="section-copy-header">{data.content.section5.header}</h3>
+            <p class="section-copy-body">{data.content.section5.body[0]}</p>
+        </div>
+
+        <div class="section-images section-custom-images section-images-section5-1">
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section5-2"]}>
+                <DynaImage data={data.content.section5.images[2]} />
+            </picture>
+            <picture class="image-wrapper `image-${data.id}` image-section5-3">
+                <DynaImage data={data.content.section5.images[3]} />
+            </picture>
+        </div>
+    </section>
+
+    <section class="page-section section-custom section-text-mixed section6">
+        <div class="section-images section-custom-images section-images-section6-0">
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-1"]}>
+            <DynaImage data={data.content.section6.images[1]} />
+
+            </picture>
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-2"]}>
+                <DynaImage data={data.content.section6.images[2]} />
+            </picture>
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-3"]}>
+                <DynaImage data={data.content.section6.images[3]} />
+            </picture>
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-4"]}>
+                <DynaImage data={data.content.section6.images[4]} />
+            </picture>
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-5"]}>
+                <DynaImage data={data.content.section6.images[5]} />
+            </picture>
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-6"]}>
+                <DynaImage data={data.content.section6.images[6]} />
+            </picture>
+        </div>
+
+        <div class="section-copy section-custom-copy section6-copy-0">
+            <h3 class="section-copy-header">{data.content.section6.header}</h3>
+            <p class="section-copy-body">{data.content.section6.body[0]}</p>
+            <p class="section-copy-body md-show">{data.content.section6.body[1]}</p>
+        </div>
+
+        <div class="section-images section-custom-images section-images-section6-1">
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section6-0"]}>
+                <DynaImage data={data.content.section6.images[0]} />
+            </picture>
+        </div>
+
+        <div class="section-copy section-custom-copy section6-copy-1 md-hide">
+            <p class="section-copy-body">{data.content.section6.body[1]}</p>
+        </div>
+    </section>
+
+    <section class="page-section section-custom section-glunzsite-stats section7">
+        <div class="section-copy section-custom-copy section7-copy-0">
+            <p class="section-copy-body">{data.content.section7.body[0]}</p>
+        </div>
+        <div class="section-images section-custom-images section-images-section7">
+            <picture class:list={["image-wrapper", `image-${data.id}`, "image-section7-0"]}>
+                <DynaImage data={data.content.section7.images[0]} />
+            </picture>
+        </div>
+    </section>
 
     </article>
   </main>

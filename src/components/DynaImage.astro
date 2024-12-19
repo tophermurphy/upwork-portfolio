@@ -1,15 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
+import type { ImageType } from "src/types/template";
 
 interface Props {
-  data: {
-    filename: string;
-    alt?: string;
-    widths?: number[];
-    mobileWidth?: string;
-    defaultWidth?: string;
-  };
+  data: ImageType;
 }
 const {
   data: { filename, alt, widths, mobileWidth, defaultWidth },
