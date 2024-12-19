@@ -1,37 +1,50 @@
 ---
-import type {ImageType} from '../types/template';
-import DynaImage from './DynaImage.astro';
+import type { PageContent } from "../types/template";
+import DynaImage from "./DynaImage.astro";
 
 interface Props {
-    data: {
-        header: string;
-        body?: string[];
-        images?: ImageType[];
-    }
-    dataKey: string;
-    sectionClass?: string;
-    id: string;
+  data: PageContent;
+  dataKey: string;
+  sectionClass?: string;
+  id: string;
 }
 
 const { data, dataKey, sectionClass, id } = Astro.props;
 ---
-   
-   <section class:list={["page-section", "section-standard", sectionClass, dataKey]}>
-        <div class:list={["section-images", `section-images-${dataKey}`]}>
-            { data.images && data.images.length &&
-                data.images.map((image, i) => (
-                <picture class:list={["image-wrapper", `image-${id}`, `image-${dataKey}-${i}`]}>
-                    <DynaImage data={image} />
-                </picture>
-                ))
-            }
-        </div>
+
+<section
+  class:list={["page-section", "section-standard", sectionClass, dataKey]}
+>
+  {
+    data.images && data.images.length && (
+      <div class:list={["section-images", `section-images-${dataKey}`]}>
+        {data.images.map((image, i) => (
+          <picture
+            class:list={[
+              "image-wrapper",
+              `image-${id}`,
+              `image-${dataKey}-${i}`,
+            ]}
+          >
+            <DynaImage data={image} />
+          </picture>
+        ))}
+      </div>
+    )
+  }
+  {
+    (data.header || data.body)
+      && (
         <div class="section-copy">
-            <h3 class="section-copy-header">{data.header}</h3>
-            { data.body && data.body.length &&
-                data.body.map((item, i)=> (
-                <p class:list={["section-copy-body", `section-copy-body-${i}`]}>{item}</p>
-                ))
-            }
+          {data.header && <h3 class="section-copy-header">{data.header}</h3>}
+          {data.body &&
+            data.body.length &&
+            data.body.map((item, i) => (
+              <p class:list={["section-copy-body", `section-copy-body-${i}`]}>
+                {item}
+              </p>
+            ))}
         </div>
-    </section>
+      )
+  }
+</section>

@@ -1,17 +1,8 @@
 ---
-import type { ImageType } from "src/types/template";
+import type { ImageType, PageData } from "src/types/template";
 import DynaImage from "./DynaImage.astro";
 interface Props {
-  data: {
-    id: string;
-    title: string;
-    subtitle: string;
-    description: string;
-    roles?: string[];
-    tools?: string[];
-    platforms?: string[];
-    headImages?: ImageType[];
-  };
+  data: PageData
 }
 const { data } = Astro.props;
 ---

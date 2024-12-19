@@ -1,4 +1,6 @@
-export const h2oCw = {
+import type { PageType } from "src/types/template";
+
+export const h2oCw: PageType = {
   title: "H2O Plus",
   id: "h2o-cw",
   slug: "h2o-plus-e-commerce-website",

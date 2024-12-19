@@ -1,4 +1,6 @@
-export const lagertown = {
+import type { PageType } from "src/types/template";
+
+export const lagertown: PageType = {
   title: "Lagertown U.S.A.",
   id: "lagertown",
   slug: "lagertown-usa-multichannel-marketing",

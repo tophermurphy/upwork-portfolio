@@ -1,4 +1,5 @@
-export const h2oEmail = {
+import type { PageType } from "src/types/template";
+export const h2oEmail: PageType = {
   title: "H2O Plus Email Marketing",
   id: "h2o-email",
   slug: "h2o-plus-email-marketing",
@@ -14,21 +15,21 @@ export const h2oEmail = {
   platforms: ["Bronto"],
   headImages: [
     {
-      filename: "h2o-email-eye-oasis-header.jpg",
+      filename: "h2o-email/header/h2o-email-eye-oasis-header.jpg",
       alt: "H2O Plus Eye Oasis email clip",
       widths: [345, 375, 750, 1125],
       mobileWidth: "90vw",
       defaultWidth: "375px",
     },
     {
-      filename: "h2o-email-employee-header.jpg",
+      filename: "h2o-email/header/h2o-email-employee-header.jpg",
       alt: "H2O Plus employee selection email clip",
       widths: [240, 323, 646, 969],
       mobileWidth: "45vw",
       defaultWidth: "323px",
     },
     {
-      filename: "h2o-email-texture-header.jpg",
+      filename: "h2o-email/header/h2o-email-texture-header.jpg",
       alt: "H2O Plus texture email clip",
       widths: [240, 317, 634, 951],
       mobileWidth: "45vw",
@@ -43,7 +44,7 @@ export const h2oEmail = {
       ],
       images: [
         {
-          filename: "h2o-email-eye-oasis-product-review.jpg",
+          filename: "h2o-email/portfolio/h2o-email-eye-oasis-product-review.jpg",
           alt: "Eye Oasis Email, featured reviews are packed tightly to give the impression of a broad sheet.",
           widths: [360, 480, 960, 1440, 1920],
           mobileWidth: "100vw",
@@ -58,7 +59,7 @@ export const h2oEmail = {
       ],
       images: [
         {
-          filename: "h2o-email-employee-review.jpg",
+          filename: "h2o-email/portfolio/h2o-email-employee-review.jpg",
           alt: "H2O Plus Employee selections email, showing headshots of the employee, product photos and a brief description of why they like them.",
           widths: [360, 480, 960, 1440, 1920],
           mobileWidth: "100vw",
@@ -73,7 +74,7 @@ export const h2oEmail = {
       ],
       images: [
         {
-          filename: "h2o-email-tips-texture.jpg",
+          filename: "h2o-email/portfolio/h2o-email-tips-texture.jpg",
           alt: "H2O Plus email featuring spa product photos with close up shots of the product texture and key ingredients.",
           widths: [360, 480, 960, 1440, 1920],
           mobileWidth: "100vw",
@@ -88,7 +89,7 @@ export const h2oEmail = {
       ],
       images: [
         {
-          filename: "h2o-email-skin-concern.jpg",
+          filename: "h2o-email/portfolio/h2o-email-skin-concern.jpg",
           alt: "H2O Plus email highlighting typical skin concerns and featuring photos of the products and ingredients that alleviate them. ",
           widths: [360, 480, 960, 1440, 1920],
           mobileWidth: "100vw",

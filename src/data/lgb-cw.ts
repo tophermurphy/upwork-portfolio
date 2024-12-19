@@ -1,4 +1,6 @@
-export const lgbCw = {
+import type { PageType } from "src/types/template";
+
+export const lgbCw: PageType = {
   title: "Louis Glunz Beer Inc.",
   id: "lgb-cw",
   slug: "louis-glunz-beer-corporate-website",
@@ -28,21 +30,21 @@ export const lgbCw = {
   platforms: ["Wordpress"],
   headImages: [
     {
-      filename: "cheers.jpg",
+      filename: "glunz/header/cheers.jpg",
       alt: "People toasting craft beer.",
       widths: [324, 416, 832, 1248],
       mobileWidth: "90vw",
       defaultWidth: "372px",
     },
     {
-      filename: "brew-kettles.jpg",
+      filename: "glunz/header/brew-kettles.jpg",
       alt: "A brewhouse kettle.",
       widths: [239, 263, 526, 789],
       mobileWidth: "45vw",
       defaultWidth: "372px",
     },
     {
-      filename: "glunz-history.jpg",
+      filename: "glunz/header/glunz-history.jpg",
       alt: "An early horse drawn beer buggy from the 19th Century for Louis Glunz Beer.",
       widths: [240, 345, 690, 1035],
       mobileWidth: "45vw",
@@ -58,21 +60,21 @@ export const lgbCw = {
       ],
       images: [
         {
-          filename: "glunzbeers-home-desktop.jpg",
+          filename: "glunz/portfolio/glunzbeers-home-desktop.jpg",
           alt: "Desktop home page for glunzbeers.com",
           widths: [209, 372, 744, 1116],
           mobileWidth: "58vw",
           defaultWidth: "372px",
         },
         {
-          filename: "glunzbeers-home-mobile.jpg",
+          filename: "glunz/portfolio/glunzbeers-home-mobile.jpg",
           alt: "Mobile home page for glunzbeers.com",
           widths: [114, 210, 420, 840],
           mobileWidth: "31.5vw",
           defaultWidth: "210px",
         },
         {
-          filename: "glunzbeers-home-tablet.jpg",
+          filename: "glunz/portfolio/glunzbeers-home-tablet.jpg",
           alt: "Tablet home page for glunzbeers.com",
           widths: [252, 480, 960, 1440],
           mobileWidth: "70vw",
@@ -87,70 +89,70 @@ export const lgbCw = {
       ],
       images: [
         {
-          filename: "glunzbeers-wireframe-0.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-0.png",
           alt: "Desktop home page wireframe for glunzbeers.com",
           widths: [180, 252, 504, 756],
           mobileWidth: "50vw",
           defaultWidth: "252px",
         },
         {
-          filename: "glunzbeers-wireframe-1.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-1.png",
           alt: "Desktop product search page wireframe for glunzbeers.com",
           widths: [348, 696, 1152],
           mobileWidth: "50vw",
           defaultWidth: "348px",
         },
         {
-          filename: "glunzbeers-wireframe-2.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-2.png",
           alt: "Desktop product details page wireframe for glunzbeers.com",
           widths: [196, 336, 672, 1008],
           mobileWidth: "54.3vw",
           defaultWidth: "336px",
         },
         {
-          filename: "glunzbeers-wireframe-3.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-3.png",
           alt: "Mobile search filters wireframe for glunzbeers.com",
           widths: [77, 132, 264, 528],
           mobileWidth: "21.4vw",
           defaultWidth: "132px",
         },
         {
-          filename: "glunzbeers-wireframe-4.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-4.png",
           alt: "Product search cards wireframe for glunzbeers.com",
           widths: [180, 360, 720],
           mobileWidth: "50vw",
           defaultWidth: "180px",
         },
         {
-          filename: "glunzbeers-wireframe-5.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-5.png",
           alt: "Product search cards wireframe for glunzbeers.com",
           widths: [101, 180, 360, 720],
           mobileWidth: "28vw",
           defaultWidth: "180px",
         },
         {
-          filename: "glunzbeers-wireframe-6.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-6.png",
           alt: "Wireframe notes for glunzbeers.com",
           widths: [108, 192, 384, 576],
           mobileWidth: "30vw",
           defaultWidth: "192px",
         },
         {
-          filename: "glunzbeers-wireframe-7.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-7.png",
           alt: "Mobile product details page wireframe for glunzbeers.com",
           widths: [60, 105, 210, 420],
           mobileWidth: "16.6vw",
           defaultWidth: "105px",
         },
         {
-          filename: "glunzbeers-wireframe-8.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-8.png",
           alt: "Product search page wireframe for glunzbeers.com",
           widths: [177, 306, 612, 918],
           mobileWidth: "49vw",
           defaultWidth: "306px",
         },
         {
-          filename: "glunzbeers-wireframe-9.png",
+          filename: "glunz/portfolio/glunzbeers-wireframe-9.png",
           alt: "Brewery details tablet page wireframe for glunzbeers.com",
           widths: [192, 384, 768],
           mobileWidth: "50vw",
@@ -166,28 +168,28 @@ export const lgbCw = {
       ],
       images: [
         {
-          filename: "glunzbeers-craft-contents-page.jpg",
+          filename: "glunz/portfolio/glunzbeers-craft-contents-page.jpg",
           alt: "Index of American craft breweries for glunzbeers.com",
           widths: [200, 300, 600, 900],
           mobileWidth: "55.5vw",
           defaultWidth: "300px",
         },
         {
-          filename: "glunzbeers-brewery-segments-page.jpg",
+          filename: "glunz/portfolio/glunzbeers-brewery-segments-page.jpg",
           alt: "Brewery segments page for glunzbeers.com",
           widths: [211, 318, 632, 950],
           mobileWidth: "58.5vw",
           defaultWidth: "318px",
         },
         {
-          filename: "glunzbeers-product-search-page.jpg",
+          filename: "glunz/portfolio/glunzbeers-product-search-page.jpg",
           alt: "Product search page for glunzbeers.com",
           widths: [229, 342, 684, 1026],
           mobileWidth: "63.5vw",
           defaultWidth: "342px",
         },
         {
-          filename: "glunzbeers-product-details-page.jpg",
+          filename: "glunz/portfolio/glunzbeers-product-details-page.jpg",
           alt: "Product details page for glunzbeers.com",
           widths: [360, 600, 1200, 1800],
           mobileWidth: "100vw",
@@ -203,14 +205,14 @@ export const lgbCw = {
       ],
       images: [
         {
-          filename: "glunzbeers-what-we-offer-page.jpg",
+          filename: "glunz/portfolio/glunzbeers-what-we-offer-page.jpg",
           alt: "A landing page dedicated to telling what specifically Louis Glunz Beer Inc. has to offer accounts, suppliers and consumers.",
           widths: [309, 426, 852, 1278],
           mobileWidth: "85.6vw",
           defaultWidth: "426px",
         },
         {
-          filename: "glunzbeers-who-we-are-page.jpg",
+          filename: "glunz/portfolio/glunzbeers-who-we-are-page.jpg",
           alt: "A landing page that tells the story of Louis Glunz Beer Inc.",
           widths: [296, 420, 840, 1260],
           mobileWidth: "82vw",
@@ -225,11 +227,11 @@ export const lgbCw = {
       ],
       images: [
         {
-          filename: "category-header.svg",
+          filename: "glunz/portfolio/category-header.svg",
           alt: "category header",
         },
         {
-          filename: "glunz-typography.svg",
+          filename: "glunz/portfolio/glunz-typography.svg",
           alt: "Typographic styles for glunzbeers.com",
         },
       ],
