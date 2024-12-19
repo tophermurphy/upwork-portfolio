@@ -23,7 +23,7 @@ export const lagertown: PageType = {
   ],
   headImages: [
     {
-      filename: "lagertown-usa-banner.jpg",
+      filename: "lagertown/header/lagertown-usa-banner.jpg",
       alt: "Chicago — Lagertown U.S.A. - Local Craft Lagers",
       widths: [324, 648, 1132, 2260, 3390],
       mobileWidth: "90vw",
@@ -39,11 +39,11 @@ export const lagertown: PageType = {
       ],
       images: [
         {
-          filename: "lagertown-logo.svg",
+          filename: "lagertown/portfolio/lagertown-logo.svg",
           alt: "H2O Plus earliest homepage from the 90's",
         },
         {
-          filename: "lagertown-background-b.jpg",
+          filename: "lagertown/portfolio/lagertown-background-b.jpg",
           alt: "Lagertown background - a yellow silhouette of the skyline of Chicago.",
           widths: [600, 1200, 1800, 2400],
           mobileWidth: "100vw",
@@ -59,28 +59,28 @@ export const lagertown: PageType = {
       ],
       images: [
         {
-          filename: "lagertown-homepage.jpg",
+          filename: "lagertown/portfolio/lagertown-homepage.jpg",
           alt: "Lagertown U.S.A. - as a homepage graphic featuring bottles & cans or featured local Chicago lagers.",
           widths: [234, 390, 780, 1170],
           mobileWidth: "65vw",
           defaultWidth: "390px",
         },
         {
-          filename: "lagertown-facebook.jpg",
+          filename: "lagertown/portfolio/lagertown-facebook.jpg",
           alt: "Lagertown U.S.A. - as a Facebook graphic featuring bottles & cans or featured local Chicago lagers.",
           widths: [306, 510, 1020, 1530],
           mobileWidth: "85vw",
           defaultWidth: "510px",
         },
         {
-          filename: "lagertown-email.jpg",
+          filename: "lagertown/portfolio/lagertown-email.jpg",
           alt: "The Lagertown promotion as a featured section of an email newsletter.",
           widths: [245, 408, 816, 1232],
           mobileWidth: "68vw",
           defaultWidth: "408px",
         },
         {
-          filename: "lagertown-catalog.png",
+          filename: "lagertown/portfolio/lagertown-catalog.png",
           alt: "The Lagertown promotion as a small catalog, brochure featuring all the lagers of Chicago carried by Louis Glunz Beer Inc.",
           widths: [177, 294, 588, 882],
           mobileWidth: "49vw",
@@ -95,21 +95,21 @@ export const lagertown: PageType = {
       ],
       images: [
         {
-          filename: "lagertown-banner.jpg",
+          filename: "lagertown/portfolio/lagertown-banner.jpg",
           alt: "Lagertown U.S.A. - as a banner behind the banner featuring local lagers available on premise.",
           widths: [339, 564, 1128, 1692],
           mobileWidth: "94vw",
           defaultWidth: "564px",
         },
         {
-          filename: "lagertown-poster.jpg",
+          filename: "lagertown/portfolio/lagertown-poster.jpg",
           alt: "Lagertown U.S.A. - as a poster featuring local lagers available on or off premise.",
           widths: [159, 264, 528, 792],
           mobileWidth: "44vw",
           defaultWidth: "264px",
         },
         {
-          filename: "lagertown-shelf-pos.jpg",
+          filename: "lagertown/portfolio/lagertown-shelf-pos.jpg",
           alt: "Lagertown U.S.A. – as a long shelf display helping the local lagers standout amoungst a noisy shelf and further brand awareness.",
           widths: [310, 516, 1032, 1548],
           mobileWidth: "86vw",
