@@ -5,7 +5,7 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const pageTitle = title || "Chris Murphy | Web Development & Design";
+const pageTitle = title ? "Chris Murphy | " + title :  "Chris Murphy | Web Development & Design";
 const pageDescription =
   description ||
   "The web portfolio of Chris Murphy. A Chicago based web developer, with expertise in front-end development and UI and UX design.";
