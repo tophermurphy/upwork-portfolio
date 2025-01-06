@@ -6,5 +6,5 @@ export default defineConfig({
     experimental: {
         svg: true
     },
-    site: "https://chrismurphy.design/"
+    site: "https://webdevchris.com"
 });
