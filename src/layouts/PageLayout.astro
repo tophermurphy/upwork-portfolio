@@ -3,6 +3,7 @@ import "../styles/styles.scss";
 import Head from "src/components/Head.astro";
 import PageNav from "src/components/PageNav.astro";
 import Footer from "src/components/Footer.astro";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -16,8 +17,9 @@ const { title, classes, description } = Astro.props;
 <html lang="en">
   <head>
     <Head title={title} description={description} />
+    <ClientRouter />
   </head>
-  <body class:list={["body", classes]}>
+  <body class:list={["body", classes]} >
     <PageNav />
     <slot />
     <Footer />
