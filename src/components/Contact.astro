@@ -1,38 +1,32 @@
 ---
-import UpworkLogo from "./svgs/Upwork.svg";
+import EmailIcon from "./svgs/EmailIcon.svg";
+import LinkedInLogo from "./svgs/LinkedInLogo.svg";
 ---
-
 <div class="contact-wrap">
-  <div class="contact-info">
-    <h4 class="contact-title">
-      <a href="https://www.upwork.com/freelancers/~0152a01eeb4d5e7dc0">
-        connect with me on <span>upwork</span>
-      </a>
-    </h4>
-    <div class="upwork-logo" aria-hidden="true">
-      <a href="https://www.upwork.com/freelancers/~0152a01eeb4d5e7dc0">
-        <UpworkLogo />
-      </a>
+    <div class="contact-info">
+      <h4 class="contact-title">contact me:</h4>
+      <address class="contact-links">
+        <a
+          class="contact-link email-link"
+          href="mailto:chrismurphydpi@yahoo.com"
+        >
+          <span class="contact-link-image email-link-image">
+            <EmailIcon />
+          </span>
+          chrismurphydpi@yahoo.com
+        </a>
+        <div class="contact-link contact-bullet">&bull;</div>
+        <a
+          id="linkedinoverride"
+          style="display:block!important"
+          class="contact-link linkedin-link"
+          href="https://www.linkedin.com/in/chrismurphywebdesign/"
+        >
+          <span class="contact-link-image email-link-image">
+            <LinkedInLogo />
+          </span>
+          in/chrismurphywebdesign
+        </a>
+      </address>
     </div>
   </div>
-</div>
-
-<style lang="scss">
-  @use "../styles/parts/variables.scss" as vars;
-  .contact-info {
-    @media (min-width: vars.$md-width) {
-      display: flex;
-      align-items: last baseline;
-      justify-content: space-between;
-    }
-  }
-  .contact-title {
-    span {
-      color: vars.$base-accent;
-      text-decoration: underline;
-    }
-  }
-  .upwork-logo {
-    width: 100px;
-  }
-</style>
